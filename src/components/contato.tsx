@@ -227,7 +227,7 @@ export const ContatoPage = () => {
                     Importante: Para a fabricação das Bombas de Concreto, é necessário que o caminhão de instalação seja fornecido pelo cliente, e ele deve estar equipado com sistema de freio a ar.
                 </p>
             </div>
-            <div className="fixed right-10 bottom-10 flex">
+            <div className="fixed right-10 bottom-10">
                 <Link href={whatsappLink} target="_blank" className="relative cursor-pointer group">
                     <Image
                         src="/icons/whatsapp.png"
