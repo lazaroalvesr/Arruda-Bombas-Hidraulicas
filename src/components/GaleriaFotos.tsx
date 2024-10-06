@@ -35,7 +35,7 @@ export const Galeria = ({ images, galleryWidthProp }: GaleriaFotos) => {
 
     return (
         <div className="lg:w-[576px] md:w-[400px] lg:h-[516px] mx-4">
-            <div className="bg-[#f1f1f1]  rounded-md w-[400px] md:w-[400px] lg:w-full flex items-center lg:h-[423px] h-[380px]">
+            <div className="bg-[#f1f1f1]  rounded-md w-full md:w-[400px] lg:w-full flex items-center lg:h-[423px] h-[380px]">
                 <Image
                     src={mainImage}
                     alt="Main Image"
