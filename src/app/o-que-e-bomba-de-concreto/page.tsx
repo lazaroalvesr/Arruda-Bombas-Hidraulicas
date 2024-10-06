@@ -109,7 +109,7 @@ export default function OqueBombaDeConcreto() {
                     </p>
                 </div>
                 <div className="pt-6">
-                    <Link href="#contato">
+                    <Link href="/#contato">
                         <button className="bg-[#001659] text-white rounded-[16px] w-[340px] text-[15px] lg:w-[223px] lg:text-[20px] border border-transparent py-4 ">
                             Fazer Orçamento
                         </button>

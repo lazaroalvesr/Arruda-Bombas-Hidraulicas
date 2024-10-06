@@ -1,14 +1,19 @@
-"use client"
+"use client";
 
-import Image from "next/image"
-import Link from "next/link"
-import { useState } from "react"
+import Image from "next/image";
+import Link from "next/link";
+import { useState } from "react";
+import { LiHeader } from "./LiHeader";
 
 export const HeaderPage = () => {
-    const [ativo, setAtivo] = useState(false)
+    const [ativo, setAtivo] = useState(false);
 
     function toggle() {
-        setAtivo(!ativo)
+        setAtivo(!ativo);
+    }
+
+    function closeMenu() {
+        setAtivo(false);
     }
 
     return (
@@ -21,11 +26,15 @@ export const HeaderPage = () => {
                             alt="Icone Arruda bombas"
                             width={219}
                             height={72}
-                            className="w-32  lg:ml-0 lg:w-[149px]"
+                            className="w-32 lg:ml-0 lg:w-[149px]"
                         />
                     </div>
                 </Link>
-                <button className="lg:hidden md:hidden absolute right-5" onClick={toggle} aria-label="Botão de abrir Menu Mobile">
+                <button
+                    className="lg:hidden md:hidden absolute right-5"
+                    onClick={toggle}
+                    aria-label="Botão de abrir Menu Mobile"
+                >
                     {ativo ? (
                         <Image src="/icons/x.svg" alt="Ícone fechar menu" width={40} height={40} />
                     ) : (
@@ -33,22 +42,18 @@ export const HeaderPage = () => {
                     )}
                 </button>
                 <nav>
-                    <ul className={`flex gap-x-7 md:mr-9 lg:h-auto md:h-auto ${ativo ? 'animeLeftMobile bg-gradient-to-r w-full top-[80px] justify-center items-center h-80 from-[#253043] to-[#35558E] absolute flex flex-col left-0' : "h-0 overflow-hidden"} `}>
-                        <Link href="/">
-                            <li className="text-[20px] md:text-[17px] text-white">Home</li>
-                        </Link>
-                        <Link href="/equipamentos">
-                            <li className="text-[20px] md:text-[17px] text-white">Equipamentos</li>
-                        </Link>
-                        <Link href="/#contato">
-                            <li className="text-[20px] md:text-[17px] text-white">Contato</li>
-                        </Link>
-                        <Link href="/o-que-e-bomba-de-concreto">
-                            <li className="text-[20px] md:text-[17px] text-white">O Que é Bomba de Concreto?</li>
-                        </Link>
+                    <ul
+                        className={`flex gap-x-7 md:mr-9 lg:h-auto md:h-auto ${ativo ? 'animeLeftMobile bg-gradient-to-r w-full top-[80px] justify-center items-center h-80 from-[#253043] to-[#35558E] absolute flex flex-col left-0' : "h-0 overflow-hidden"
+                            }`}
+                        onClick={closeMenu} // Close menu when clicking anywhere in the ul
+                    >
+                        <LiHeader href="/" nome="Home" />
+                        <LiHeader href="/equipamentos" nome="Equipamentos" />
+                        <LiHeader href="/#contato" nome="Contato" />
+                        <LiHeader href="/o-que-e-bomba-de-concreto" nome="O Que é Bomba de Concreto?" />
                     </ul>
                 </nav>
             </div>
         </header>
-    )
-}
+    );
+};

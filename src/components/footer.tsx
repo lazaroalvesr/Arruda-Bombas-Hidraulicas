@@ -34,19 +34,19 @@ export const FooterPage = () => {
                     <h5 className="font-semibold text-[22px] text-white">Equipamentos</h5>
                     <nav>
                         <ul>
-                            <Link href="#equipamentos">
+                            <Link href="/equipamentos/p700">
                                 <li className="text-[16px] md:text-[14px] text-[#CED0D6] hover:text-white">P700</li>
                             </Link>
-                            <Link href="#equipamentos">
+                            <Link href="/equipamentos/carretinha-pequena">
                                 <li className="text-[16px] md:text-[14px] text-[#CED0D6] hover:text-white">Carretinha Pequena</li>
                             </Link>
-                            <Link href="#equipamentos">
+                            <Link href="/equipamentos/carretinha-rebocavel">
                                 <li className="text-[16px] md:text-[14px] text-[#CED0D6] hover:text-white">Carretinha rebocável</li>
                             </Link>
-                            <Link href="#equipamentos">
-                                <li className="text-[16px] md:text-[14px] text-[#CED0D6] hover:text-white w-[205px]">Bomba De Concreto com 2 Betoneira</li>
+                            <Link href="/equipamentos/multimix">
+                                <li className="text-[16px] md:text-[14px] text-[#CED0D6] hover:text-white w-[205px]">Caminhão MultiMix</li>
                             </Link>
-                            <Link href="#equipamentos">
+                            <Link href="/equipamentos/betonbomba">
                                 <li className="text-[16px] md:text-[14px] text-[#CED0D6] hover:text-white w-[205px]">Betonbomba</li>
                             </Link>
                         </ul>
@@ -92,6 +92,6 @@ export const FooterPage = () => {
                 <p className="text-[12px] text-[#CED0D6]">Copyright © 2021 Arruda Bombas Hidráulicas. Todos os direitos reservados</p>
                 <p className="text-[12px] text-[#CED0D6]">Criado por : Lázaro Alves R</p>
             </div>
-        </footer>
+        </footer >
     )
 }

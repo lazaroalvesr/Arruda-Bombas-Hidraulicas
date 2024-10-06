@@ -37,3 +37,8 @@ export interface especificacoes {
     tituloEspecificacoes: string,
     textEspecificacoes: string
 }
+
+export interface LiHeaderProps {
+    href: string
+    nome: string
+}
