@@ -57,7 +57,7 @@ export const ContatoPage = () => {
                     <div className="rounded-[10px] lg:flex hidden md:flex w-[260px] lg:w-[399px] text-start h-[746px] bg-gradient-to-r from-[#253043] to-[#35558E]">
                         <div className="p-8">
                             <h3 className="lg:text-[24px] text-[15px] font-semibold pb-[24px] text-white">informações de contato</h3>
-                            <p className="lg:text-[15px] md:w-48 text-sm text-[#C1C3C7]">Estamos aqui para ajudar! Escolha a forma de comunicação que mais lhe convém e entre em contato conosco.</p>
+                            <p className="lg:text-[15px] md:w-48 lg:w-full text-sm text-[#C1C3C7]">Estamos aqui para ajudar! Escolha a forma de comunicação que mais lhe convém e entre em contato conosco.</p>
                             <div className="pt-[80px] flex-col flex gap-[35px]">
                                 <div className="flex items-center md:gap-3 lg:gap-6">
                                     <Image
