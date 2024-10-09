@@ -5,8 +5,25 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
     title: 'P700 | Arruda Bombas Hidráulicas',
     description: 'Na Arruda Bombas Hidráulicas, somos especialistas na venda de bombas de concreto hidráulicas de alta performance. Oferecemos soluções confiáveis que garantem eficiência e durabilidade, atendendo todas as suas necessidades de bombeamento de concreto do seu projeto.',
-    keywords: 'bomba de concreto hidráulica, venda de bombas de concreto, bombas de concreto para construção',
-    openGraph: {
+    keywords: [
+        'bomba de concreto hidráulica',
+        'venda de bombas de concreto',
+        'bombas de concreto para construção',
+        'aluguel de bombas de concreto',
+        'preço de bombas de concreto',
+        'bombas de concreto para obras',
+        'bombas de concreto para grandes volumes',
+        'manutenção de bombas de concreto',
+        'acessórios para bombas de concreto',
+        'bombas de concreto elétricas',
+        'bombas de concreto diesel',
+        'bombas de concreto para fundações',
+        'bombas de concreto para pré-moldados',
+        'serviços de bombeamento de concreto',
+        'como escolher uma bomba de concreto',
+        'eficiência das bombas de concreto'
+    ],
+     openGraph: {
         title: 'Arruda Bombas Hidráulicas',
         description: 'Líder em vendas de bombas de concreto hidráulicas no Brasil.',
         url: 'https://www.arrudabombas.com.br',
