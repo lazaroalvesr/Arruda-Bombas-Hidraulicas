@@ -18,10 +18,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Arruda Bombas Hidráulicas',
     description: 'Líder em vendas de bombas de concreto hidráulicas no Brasil.',
-    url: 'https://www.arrudabombas.com.br', 
+    url: 'https://www.arrudabombas.com.br',
     images: [
       {
-        url: '/images/logo.png', 
+        url: '/images/logo.png',
         width: 800,
         height: 600,
         alt: 'Logo da Arruda Bombas',
@@ -48,7 +48,7 @@ export default function RootLayout({
       <body className={poppins.className}>
         <HeaderPage />
         {children}
-        <FooterPage/>
+        <FooterPage />
       </body>
     </html>
   );
