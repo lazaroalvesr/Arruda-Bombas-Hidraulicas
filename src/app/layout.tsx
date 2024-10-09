@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     url: 'https://www.arrudabombas.com.br',
     images: [
       {
-        url: '/images/logo.png',
+        url: '/icons/logo.png',
         width: 800,
         height: 600,
         alt: 'Logo da Arruda Bombas',

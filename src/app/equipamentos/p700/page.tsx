@@ -23,13 +23,13 @@ export const metadata: Metadata = {
         'como escolher uma bomba de concreto',
         'eficiência das bombas de concreto'
     ],
-     openGraph: {
+    openGraph: {
         title: 'Arruda Bombas Hidráulicas',
         description: 'Líder em vendas de bombas de concreto hidráulicas no Brasil.',
         url: 'https://www.arrudabombas.com.br',
         images: [
             {
-                url: '/images/logo.png',
+                url: '/icons/logo.png',
                 width: 800,
                 height: 600,
                 alt: 'Logo da Arruda Bombas',
