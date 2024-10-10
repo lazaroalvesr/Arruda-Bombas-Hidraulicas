@@ -15,7 +15,7 @@ export const DesenvolvimentoPage = () => {
                 <div className="lg:p-8 p-6 flex flex-col gap-8">
                     <h3 className="lg:text-[24px] font-bold text-white">Desenvolvimento de Equipamentos Sob Medida</h3>
                     <p className="text-white lg:text-[17px] text-[12px]">Na Arruda Bombas, projetamos cada equipamento com precisão para atender às necessidades específicas do seu projeto. Com engenharia avançada e inovação, garantimos eficiência máxima no bombeamento de concreto usinado. Nossos equipamentos são testados e aperfeiçoados para oferecer desempenho superior em qualquer condição.</p>
-                    <Link href="#equipamento">
+                    <Link href="/#contato">
                         <button className="flex items-center bg-[#001659] text-white rounded-[16px] w-[220px] text-[14px] lg:w-[260px] justify-center gap-4 border-white lg:text-[20px] border py-4">
                             <span>
                                 <Image 
