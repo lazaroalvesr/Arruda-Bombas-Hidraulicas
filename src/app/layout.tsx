@@ -3,6 +3,7 @@ import "./globals.css";
 import { Poppins } from "next/font/google";
 import { HeaderPage } from "@/components/header";
 import { FooterPage } from "@/components/footer";
+import { Analytics } from "@vercel/analytics/react"
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -66,6 +67,7 @@ export default function RootLayout({
       <body className={poppins.className}>
         <HeaderPage />
         {children}
+        <Analytics />
         <FooterPage />
       </body>
     </html>
