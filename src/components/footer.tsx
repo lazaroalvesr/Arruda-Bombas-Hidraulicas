@@ -1,7 +1,22 @@
+"use client"
+
 import Image from "next/image"
 import Link from "next/link"
+import { useEffect, useState } from "react";
 
 export const FooterPage = () => {
+
+    const [anoCriacao, setAnoCriacao] = useState("");
+
+    useEffect(() => {
+        const obterAnoAtual = () => {
+            const data = new Date();
+            return data.getFullYear().toString();
+        };
+
+        setAnoCriacao(obterAnoAtual());
+    }, []);
+
     return (
         <footer className="bg-gradient-to-r from-[#253043] to-[#35558E]">
             <div className="lg:max-w-[1175px] ml-4 lg:ml-auto md:flex-row gap-8 lg:gap-0 m-auto flex lg:flex-row flex-col lg:justify-between md:justify-between py-5 items-start pt-[30px] lg:pt-[79px] border-b pb-8 border-[#CED0D6]">
@@ -89,9 +104,9 @@ export const FooterPage = () => {
                 </div>
             </div>
             <div className="flex justify-between md:mx-4 ml-2 lg:ml-auto lg:mx-auto gap-4 md:flex-row max-w-[1175px] m-auto py-3 lg:flex-row flex-col">
-                <p className="text-[12px] text-[#CED0D6]">Copyright © 2021 Arruda Bombas Hidráulicas. Todos os direitos reservados</p>
+                <p className="text-[12px] text-[#CED0D6]">Copyright ©{anoCriacao} Arruda Bombas Hidráulicas. Todos os direitos reservados</p>
                 <p className="text-[12px] text-[#CED0D6]">Criado por : Lázaro Alves R</p>
             </div>
-        </footer >
+        </footer>
     )
 }
