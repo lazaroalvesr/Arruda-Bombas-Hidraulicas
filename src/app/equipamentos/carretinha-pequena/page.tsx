@@ -66,7 +66,7 @@ export default function CarretinhaPequena() {
                 images={images}
                 tituloEquipamento="Carretinha Pequena"
                 descricao="A Carretinha Pequena é a solução ideal para bombeamento em espaços reduzidos. Compacta e robusta, ela oferece agilidade e eficiência, garantindo resultados confiáveis em pequenas obras. Com desempenho superior, é perfeita para quem busca praticidade sem comprometer a qualidade."
-                preco="R$ 140.000"
+                preco="A consultar"
                 motor={{
                     motor1: "Motor Elétrico",
                     motor2: "Motor a Diesel"
