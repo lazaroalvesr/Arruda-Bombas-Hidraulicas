@@ -21,7 +21,7 @@ export const CardEquipamentos = ({ href, price, src, title }: CardEquipamentosPr
                         <p className="text-[27px] pt-2 font-bold text-[#001659]">{price}</p>
                     </div>
                     <div className="pt-[17px] flex gap-[20px]">
-                        <Link href="/">
+                        <Link href="/#contato">
                             <button className="bg-[#001659] hover:scale-105 cursor-pointer transition-transform duration-300 text-white rounded-[10px] w-[136px] h-[48px]">Quero Essa!</button>
                         </Link>
                         <Link href={href}>
