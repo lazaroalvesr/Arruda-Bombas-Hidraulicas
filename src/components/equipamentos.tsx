@@ -11,7 +11,7 @@ export const EquipamentosPage = () => {
                         href="/equipamentos/carretinha-pequena"
                         src="/img/eletrica.png"
                         title="Carretinha Pequena"
-                        price="A consultar"
+                        price="R$ 185.000"
                     />
                     <CardEquipamentos
                         href="/equipamentos/carretinha-rebocavel"
