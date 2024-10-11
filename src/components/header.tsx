@@ -45,10 +45,10 @@ export const HeaderPage = () => {
                     <ul
                         className={`flex gap-x-7 md:mr-9 lg:h-auto md:h-auto ${ativo ? 'animeLeftMobile bg-gradient-to-r w-full top-[80px] justify-center items-center h-80 from-[#253043] to-[#35558E] absolute flex flex-col left-0' : "h-0 overflow-hidden"
                             }`}
-                        onClick={closeMenu} // Close menu when clicking anywhere in the ul
+                        onClick={closeMenu} 
                     >
                         <LiHeader href="/" nome="Home" />
-                        <LiHeader href="/equipamentos" nome="Equipamentos" />
+                        <LiHeader href="/bomba-de-concreto" nome="Bomba de concreto" />
                         <LiHeader href="/#contato" nome="Contato" />
                         <LiHeader href="/o-que-e-bomba-de-concreto" nome="O Que é Bomba de Concreto?" />
                     </ul>

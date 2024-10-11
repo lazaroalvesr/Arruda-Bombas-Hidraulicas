@@ -9,34 +9,34 @@ export default function EquipamentosPage() {
                 </div>
                 <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 pt-12">
                     <CardEquipamentos
-                        href="/equipamentos/carretinha-pequena"
+                        href="/bomba-de-concreto/carretinha-pequena"
                         src="/img/eletrica.png"
                         title="Carretinha Pequena"
                         price="R$ 185.000"
                     />
                     <CardEquipamentos
-                        href="/equipamentos/carretinha-rebocavel"
+                        href="/bomba-de-concreto/carretinha-rebocavel"
                         src="/img/rebocavel.png"
                         title="Carretinha Rebocável"
                         price="A consultar"
                     />
                     <CardEquipamentos
-                        href="/equipamentos/p700"
+                        href="/bomba-de-concreto/p700"
                         src="/img/p700.png"
                         title="P700"
                         price="R$ 165.000"
                     />
                     <CardEquipamentos
-                        href="/equipamentos/multimix"
+                        href="/bomba-de-concreto/multimix"
                         src="/img/betoneira.png"
                         title="Caminhão MultiMix"
                         price="R$ 185.000"
                     />
                     <CardEquipamentos
-                        href="/equipamentos/betonbomba"
+                        href="/bomba-de-concreto/betonbomba"
                         src="/img/betonbomba.png"
                         title="Betonbomba"
-                        price="R$ 185.000"
+                        price="R$ 165.000"
                     />
                 </div>
             </div>

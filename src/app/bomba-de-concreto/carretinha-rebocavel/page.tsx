@@ -23,7 +23,7 @@ export const metadata: Metadata = {
         'como escolher uma bomba de concreto',
         'eficiência das bombas de concreto'
     ],
-     openGraph: {
+    openGraph: {
         title: 'Arruda Bombas Hidráulicas',
         description: 'Líder em vendas de bombas de concreto hidráulicas no Brasil.',
         url: 'https://www.arrudabombas.com.br',
@@ -76,20 +76,20 @@ export default function CarretinhaRebocavel() {
                 <h2 className="lg:text-[32px] text-[24px] font-medium">Veja Outros Equipamentos</h2>
                 <div className="flex lg:flex-row flex-col md:flex-row md:gap-5 gap-8 my-10 lg:my-20">
                     <CardEquipamentos
-                        href="/equipamentos/carretinha-pequena"
+                        href="/bomba-de-concreto/carretinha-pequena"
                         src="/img/eletrica.png"
                         title="Carretinha Pequena"
                         price="R$ 185.000"
                     />
                     <CardEquipamentos
-                        href="/equipamentos/betonbomba"
+                        href="/bomba-de-concreto/betonbomba"
                         src="/img/betonbomba.png"
                         title="Betonbomba"
-                        price="R$ 185.000"
+                        price="R$ 165.000"
                     />
                     <div className="flex md:hidden lg:flex">
                         <CardEquipamentos
-                            href="/equipamentos/p700"
+                            href="/bomba-de-concreto/p700"
                             src="/img/p700.png"
                             title="P700"
                             price="R$ 165.000"

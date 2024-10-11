@@ -33,7 +33,7 @@ export const FooterPage = () => {
                     <h5 className="font-semibold text-[22px] text-white">Empresa</h5>
                     <nav>
                         <ul>
-                            <Link href="/equipamentos">
+                            <Link href="/bomba-de-concreto">
                                 <li className="text-[16px] md:text-[14px] text-[#CED0D6] hover:text-white">Equipamentos</li>
                             </Link>
                             <Link href="/#contato">
@@ -49,19 +49,19 @@ export const FooterPage = () => {
                     <h5 className="font-semibold text-[22px] text-white">Equipamentos</h5>
                     <nav>
                         <ul>
-                            <Link href="/equipamentos/p700">
+                            <Link href="/bomba-de-concreto/p700">
                                 <li className="text-[16px] md:text-[14px] text-[#CED0D6] hover:text-white">P700</li>
                             </Link>
-                            <Link href="/equipamentos/carretinha-pequena">
+                            <Link href="/bomba-de-concreto/carretinha-pequena">
                                 <li className="text-[16px] md:text-[14px] text-[#CED0D6] hover:text-white">Carretinha Pequena</li>
                             </Link>
-                            <Link href="/equipamentos/carretinha-rebocavel">
+                            <Link href="/bomba-de-concreto/carretinha-rebocavel">
                                 <li className="text-[16px] md:text-[14px] text-[#CED0D6] hover:text-white">Carretinha rebocável</li>
                             </Link>
-                            <Link href="/equipamentos/multimix">
+                            <Link href="/bomba-de-concreto/multimix">
                                 <li className="text-[16px] md:text-[14px] text-[#CED0D6] hover:text-white w-[205px]">Caminhão MultiMix</li>
                             </Link>
-                            <Link href="/equipamentos/betonbomba">
+                            <Link href="/bomba-de-concreto/betonbomba">
                                 <li className="text-[16px] md:text-[14px] text-[#CED0D6] hover:text-white w-[205px]">Betonbomba</li>
                             </Link>
                         </ul>
