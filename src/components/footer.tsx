@@ -105,7 +105,7 @@ export const FooterPage = () => {
             </div>
             <div className="flex justify-between md:mx-4 ml-2 lg:ml-auto lg:mx-auto gap-4 md:flex-row max-w-[1175px] m-auto py-3 lg:flex-row flex-col">
                 <p className="text-[12px] text-[#CED0D6]">Copyright ©{anoCriacao} Arruda Bombas Hidráulicas. Todos os direitos reservados</p>
-                <p className="text-[12px] text-[#CED0D6]">Criado por : Lázaro Alves R</p>
+                <p className="text-[12px] text-[#CED0D6]">Criado por: <Link href="https://www.lazaroalvesr.com/" target="_blank">Lázaro Alves R</Link></p>
             </div>
         </footer>
     )
