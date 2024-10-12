@@ -64,7 +64,7 @@ export default function CarretinhaRebocavel() {
                 images={images}
                 tituloEquipamento="Carretinha Rebocável"
                 descricao="A Carretinha Rebocável é a solução perfeita para operações de bombeamento robustas e eficientes. Projetada para atender às demandas mais exigentes, ela oferece um desempenho excepcional em diversas aplicações."
-                preco="R$ 200.000"
+                preco="A Consultar"
                 motor={{
                     motor1: "Perkins 4CC",
                     motor2: "MWM 4CC"
