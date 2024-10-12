@@ -28,7 +28,7 @@ export const EquipamentosPage = () => {
                         />
                     </div>
                 </div>
-                <Link href="/equipamentos">
+                <Link href="/bomba-de-concreto">
                     <button className="bg-[#001659] mt-[53px] hover:scale-105 cursor-pointer transition-transform duration-300 text-white rounded-[10px] w-[282px] h-[48px] text-[22px]">Ver mais</button>
                 </Link>
             </div>
