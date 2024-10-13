@@ -4,7 +4,7 @@ import Link from "next/link"
 export const LiHeader = ({ href, nome  }: LiHeaderProps) => {
     return (
         <Link href={href} >
-            <li className="text-[20px] md:text-[17px] text-white">{nome}</li>
+            <li className="text-[20px] lg:text-[17px] md:text-[14px] text-white">{nome}</li>
         </Link>
     )
 }

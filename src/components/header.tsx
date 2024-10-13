@@ -20,14 +20,18 @@ export const HeaderPage = () => {
         <header className="bg-gradient-to-r from-[#253043] to-[#35558E]">
             <div className="lg:max-w-[1175px] m-auto flex lg:justify-between md:justify-between py-5 items-center">
                 <Link href="/">
-                    <div className="w-32 ml-5 lg:ml-0 lg:w-[149px]">
+                    <div className="w-52 ml-5 lg:ml-0 lg:w-[249px] gap-2 flex items-center">
                         <Image
-                            src="/icons/logo.png"
+                            src="/icon.png"
                             alt="Icone Arruda bombas"
-                            width={219}
-                            height={72}
-                            className="w-32 lg:ml-0 lg:w-[149px]"
+                            width={78}
+                            height={78}
+                            className="w-12 lg:ml-0 lg:w-[78px]"
                         />
+                        <div className="flex flex-col">
+                            <p className="text-white text-4xl">Arruda</p>
+                            <p className="text-white text-sm">bombas Hidráulicas</p>
+                        </div>
                     </div>
                 </Link>
                 <button
@@ -43,9 +47,9 @@ export const HeaderPage = () => {
                 </button>
                 <nav>
                     <ul
-                        className={`flex gap-x-7 md:mr-9 lg:h-auto md:h-auto ${ativo ? 'animeLeftMobile bg-gradient-to-r w-full top-[80px] justify-center items-center h-80 from-[#253043] to-[#35558E] absolute flex flex-col left-0' : "h-0 overflow-hidden"
+                        className={`flex gap-x-7 md:gap-x-4 md:mr-9 lg:h-auto md:h-auto ${ativo ? 'animeLeftMobile bg-gradient-to-r w-full top-[80px] justify-center items-center h-80 from-[#253043] to-[#35558E] absolute flex flex-col left-0' : "h-0 overflow-hidden"
                             }`}
-                        onClick={closeMenu} 
+                        onClick={closeMenu}
                     >
                         <LiHeader href="/" nome="Home" />
                         <LiHeader href="/bomba-de-concreto" nome="Bomba de concreto" />
