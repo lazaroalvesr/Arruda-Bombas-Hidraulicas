@@ -24,7 +24,7 @@ export const HeaderPage = () => {
                 <Link href="/">
                     <div className="w-52 ml-5 lg:ml-0 lg:w-[249px] gap-2 flex items-center">
                         <Image
-                            src="/icons/Logo.png"
+                            src="/icons/logo.png"
                             alt="Icone Arruda bombas"
                             width={200}
                             height={78}

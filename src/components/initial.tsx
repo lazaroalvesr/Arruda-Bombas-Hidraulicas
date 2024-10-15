@@ -10,12 +10,12 @@ export const IntialPage = () => {
                     <p className="lg:text-[18px]  text-[16px] pt-[20px] text-[#001659]">Na Arruda Bombas, oferecemos soluções avançadas para o bombeamento de concreto usinado. Descubra como nossa tecnologia pode elevar seu projeto a um novo nível. Entre em contato e encontre a melhor solução do mercado.</p>
                     <div className="pt-[30px] flex lg:gap-5 gap-4  h-[90px]">
                         <Link href="#contato">
-                            <button className="bg-[#001659] text-white rounded-[14px] w-full lg:w-[223px] text-[15px] lg:text-[18px] border border-transparent py-4 px-6">
+                            <button className="bg-[#001659] text-white rounded-[14px] w-full lg:w-[223px] text-[15px] lg:text-[18px] border border-transparent py-4 lg:px-6 px-4">
                                 Fazer Orçamento
                             </button>
                         </Link>
                         <Link href='/Catálogo_Arruda_Bombas.pdf' target="_blank" download>
-                            <button className="border-[#001659] border-2 text-[#001659] w-full lg:w-[223px] text-[15px] lg:text-[18px] duration-300 ease-in-out py-4 px-6 rounded-[14px]"> 
+                            <button className="border-[#001659] border-2 text-[#001659] w-full lg:w-[223px] text-[15px] lg:text-[18px] duration-300 ease-in-out py-4 lg:px-6 px-4 rounded-[14px]">
                                 Baixar Catálogo
                             </button>
                         </Link>

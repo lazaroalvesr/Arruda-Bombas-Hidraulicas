@@ -23,7 +23,7 @@ export const FooterPage = () => {
             <div className="lg:max-w-[1175px] ml-4 lg:ml-auto md:flex-row gap-8 lg:gap-0 m-auto flex lg:flex-row flex-col lg:justify-between md:justify-between py-5 items-start pt-[30px] lg:pt-[79px] border-b pb-8 border-[#CED0D6]">
                 <Link href="/">
                     <Image
-                        src="/icons/Logo.png"
+                        src="/icons/logo.png"
                         alt="Icone Arruda bombas"
                         width={219}
                         height={72}
