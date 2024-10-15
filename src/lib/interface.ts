@@ -41,4 +41,10 @@ export interface especificacoes {
 export interface LiHeaderProps {
     href: string
     nome: string
+    isActive: boolean
+}
+
+export interface LiFooterProps {
+    href: string
+    nome: string
 }
