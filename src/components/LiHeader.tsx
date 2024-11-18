@@ -1,15 +1,13 @@
 import { LiHeaderProps } from "@/lib/interface";
 import Link from "next/link";
 
-export const LiHeader = ({ href, nome, isActive }: LiHeaderProps) => {
+export const LiHeader = ({ href, nome }: LiHeaderProps) => {
     return (
         <li className="relative"> 
-            <Link href={href} className="text-[20px] lg:text-[19px] md:text-[14px] text-black block">
+            <Link href={href} className="text-gray-900 hover:text-blue-900 px-3 py-2 text-sm font-medium">
                 {nome}
             </Link>
-            {isActive && (
-                <div className="absolute bg-[#001659] w-2/4 h-0.5 bottom-0.5 left-0"></div>
-            )}
+
         </li>
     );
 };

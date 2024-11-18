@@ -3,31 +3,43 @@ import Link from "next/link"
 
 export const DesenvolvimentoPage = () => {
     return (
-        <section className="relative">
-            <Image
-                src="/img/desenvolvimento.png"
-                alt="Desenvolvimento"
-                width={1512}
-                height={538}
-                className="w-full lg:h-[538px] h-[400px] object-cover md:h-[360px]"
-            />
-            <div className="lg:top-24 top-8 right-3 lg:right-20 rounded-xl absolute lg:w-[721px] md:w-[521px] lg:h-[356px] bg-[#0f182878]">
-                <div className="lg:p-8 p-6 flex flex-col gap-8">
-                    <h3 className="lg:text-[24px] font-bold text-white">Desenvolvimento de Equipamentos Sob Medida</h3>
-                    <p className="text-white lg:text-[17px] text-[12px]">Na Arruda Bombas, projetamos cada equipamento com precisão para atender às necessidades específicas do seu projeto. Com engenharia avançada e inovação, garantimos eficiência máxima no bombeamento de concreto usinado. Nossos equipamentos são testados e aperfeiçoados para oferecer desempenho superior em qualquer condição.</p>
-                    <Link href="/#contato">
-                        <button className="flex items-center bg-[#001659] text-white rounded-[16px] w-[220px] text-[14px] lg:w-[260px] justify-center gap-4 border-white lg:text-[20px] border py-4">
-                            <span>
-                                <Image 
+        <section className="relative min-h-[600px] w-full">
+            <div className="absolute inset-0">
+                <Image
+                    src="/img/desenvolvimento.png"
+                    alt="Engineer working on technical drawings"
+                    className="object-cover w-full h-full"
+                    width={1200}
+                    height={600}
+                    priority
+                />
+                <div className="absolute inset-0 bg-black/60" />
+            </div>
+
+            <div className="relative max-w-7xl mx-auto px-4 py-20 md:py-32">
+                <div className="max-w-2xl">
+                    <h1 className="text-3xl md:text-4xl font-bold text-white mb-6">
+                        Desenvolvimento de Equipamentos Sob Medida
+                    </h1>
+
+                    <p className="text-gray-200 text-lg mb-8">
+                        Na Arruda Bombas, projetamos cada equipamento com precisão para atender às necessidades específicas do seu projeto. Com engenharia avançada e inovação, garantimos eficiência máxima no bombeamento de concreto usinado. Nossos equipamentos são testados e aperfeiçoados para oferecer desempenho superior em qualquer condição.
+                    </p>
+
+                    <button
+                        className="bg-[#00238C] hover:bg-[#001a66] text-white px-8 py-6 h-auto text-lg group flex items-center gap-2 rounded-md">
+                        <span>
+                            <Image
                                 src="/img/WhatsApp_Icon.png"
                                 alt="Icone do Whatsapp"
                                 width={34}
                                 height={34}
-                                />
-                            </span>
+                            />
+                        </span>
+                        <Link href="/#contato" target="_blank" rel="noopener noreferrer">
                             Fazer Orçamento
-                        </button>
-                    </Link>
+                        </Link>
+                    </button>
                 </div>
             </div>
         </section>

@@ -4,9 +4,9 @@ import Link from "next/link"
 
 export const CardEquipamentos = ({ href, price, src, title }: CardEquipamentosProps) => {
     return (
-        <div className="w-[345px] cursor-pointer h-[573px] border-2 border-[#BEBFC3] rounded-[20px]">
+        <div className="w-[345px] cursor-pointer h-[573px] border-2 border-[#BEBFC3] rounded-lg">
             <div className="flex items-center justify-center flex-col m-auto pt-[26px]">
-                <div className="border-2 flex items-center border-[#BEBFC3] rounded-[20px] w-[292px] h-[328px]">
+                <div className="border-2 flex items-center border-[#BEBFC3] rounded-lg w-[292px] h-[328px]">
                     <Image
                         src={src}
                         alt="Foto do equipamento"

@@ -45,5 +45,3 @@ export const EquipamentosPage = () => {
         </section>
     )
 }
-
-//                 <div className="flex pt-[52px] lg:w-full md:w-[800px] justify-center md:gap-[20px] md:flex-wrap lg:flex-row lg:gap-[21px] flex-col md:flex-row gap-y-8 lg:gap-y-0">

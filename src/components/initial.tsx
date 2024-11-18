@@ -3,32 +3,48 @@ import Link from "next/link"
 
 export const IntialPage = () => {
     return (
-        <section className="w-full">
-            <div className="lg:max-w-[1175px] ml-5 lg:ml-auto m-auto flex pt-[58px] items-center justify-between pb-12">
-                <div className="lg:w-[580px] w-[340px] h-[360px]">
-                    <h1 className="lg:text-[44px] text-[32px] text-[#001659] font-semibold">Bombeamento de Alta Precisão</h1>
-                    <p className="lg:text-[18px]  text-[16px] pt-[20px] text-[#001659]">Na Arruda Bombas, oferecemos soluções avançadas para o bombeamento de concreto usinado. Descubra como nossa tecnologia pode elevar seu projeto a um novo nível. Entre em contato e encontre a melhor solução do mercado.</p>
-                    <div className="pt-[30px] flex lg:gap-5 gap-4  h-[90px]">
-                        <Link href="#contato">
-                            <button className="bg-[#001659] text-white rounded-[14px] w-full lg:w-[223px] text-[15px] lg:text-[18px] border border-transparent py-4 lg:px-6 px-4">
-                                Fazer Orçamento
-                            </button>
-                        </Link>
-                        <Link href='/Catálogo_Arruda_Bombas.pdf' target="_blank" download>
-                            <button className="border-[#001659] border-2 text-[#001659] w-full lg:w-[223px] text-[15px] lg:text-[18px] duration-300 ease-in-out py-4 lg:px-6 px-4 rounded-[14px]">
-                                Baixar Catálogo
-                            </button>
-                        </Link>
-                    </div>
+        <div className="relative bg-white overflow-hidden">
+            <div className="max-w-7xl mx-auto">
+                <div className="relative  pb-8 bg-white sm:pb-16 md:pb-20 lg:pb-28 xl:pb-32">
+                    <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
+                        <div className="flex flex-col lg:flex-row items-center justify-between">
+                            <div className="sm:text-center lg:text-left lg:w-1/2">
+                                <h1 className="text-4xl tracking-tight font-bold text-gray-900 sm:text-5xl md:text-6xl">
+                                    <span className="block text-blue-900">Bombeamento de Alta</span>
+                                    <span className="block text-blue-900">Precisão</span>
+                                </h1>
+                                <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+                                    Na Arruda Bombas, oferecemos soluções avançadas para o bombeamento de concreto usinado. Descubra como nossa tecnologia pode elevar seu projeto a um novo nível. Entre em contato e encontre a melhor solução do mercado.
+                                </p>
+                                <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+                                    <div className="rounded-md shadow">
+                                        <Link href="#contato"
+                                            className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-900 hover:bg-blue-800 md:py-4 md:text-lg md:px-10">
+                                            Fazer Orçamento
+                                        </Link>
+                                    </div>
+                                    <div className="mt-3 sm:mt-0 sm:ml-3">
+                                        <Link href="/Catálogo_Arruda_Bombas.pdf" className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-blue-900 bg-white border-blue-900 hover:bg-gray-50 md:py-4 md:text-lg md:px-10">
+                                            Baixar Catálogo
+                                        </Link>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="lg:w-1/2 mt-10 lg:mt-0 lg:block hidden ml-12">
+                                <div className="bg-blue-900 h-full rounded-lg shadow-xl flex items-center justify-center text-white text-xl">
+                                    <Image
+                                        src="/img/img_Initial.png"
+                                        alt="Foto Carretinha elétrica"
+                                        width={400}
+                                        height={553}
+                                        className="lg:flex hidden md:flex lg:w-[400px] md:w-[309px] md:mr-8 w-auto h-auto"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </main>
                 </div>
-                <Image
-                    src="/img/img_Initial.png"
-                    alt="Foto Carretinha elétrica"
-                    width={400}
-                    height={553}
-                    className="lg:flex hidden md:flex lg:w-[400px] md:w-[309px] md:mr-8 w-auto h-auto"
-                />
             </div>
-        </section>
+        </div>
     )
 }
