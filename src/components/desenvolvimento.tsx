@@ -1,7 +1,20 @@
+"use client"
+
 import Image from "next/image"
 import Link from "next/link"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 export const DesenvolvimentoPage = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+    }, []);
+
+
     return (
         <section className="relative min-h-[600px] w-full">
             <div className="absolute inset-0">
@@ -16,7 +29,7 @@ export const DesenvolvimentoPage = () => {
                 <div className="absolute inset-0 bg-black/60" />
             </div>
 
-            <div className="relative max-w-7xl mx-auto px-4 py-20 md:py-32">
+            <div className="relative max-w-7xl mx-auto px-4 py-20 md:py-32" data-aos="fade-right">
                 <div className="max-w-2xl">
                     <h1 className="text-3xl md:text-4xl font-bold text-white mb-6">
                         Desenvolvimento de Equipamentos Sob Medida

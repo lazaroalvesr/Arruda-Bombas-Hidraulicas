@@ -1,11 +1,19 @@
 "use client"
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Image from "next/image"
-import { FormEvent, useState } from "react"
+import { FormEvent, useState, useEffect } from "react"
 import emailjs from '@emailjs/browser'
 import Link from "next/link"
 
 export const ContatoPage = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+    }, []);
 
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
@@ -54,12 +62,12 @@ export const ContatoPage = () => {
             <div className="flex flex-col items-center text-center justify-center">
                 <h1 className="text-[#001659] font-semibold text-[28px] lg:text-[32px] ml-4 lg:ml-0">Entre em Contato</h1>
                 <div className="flex lg:flex-row lg:gap-14 gap-8 lg:pt-16 pt-[52px]">
-                    <div className="rounded-[10px] lg:flex hidden md:flex w-[260px] lg:w-[399px] text-start h-[746px] bg-[#00238C]">
+                    <div className="rounded-[10px] lg:flex hidden md:flex w-[260px] lg:w-[399px] text-start h-[746px] bg-[#00238C]" data-aos="fade-right">
                         <div className="p-8">
                             <h3 className="lg:text-[24px] text-[15px] font-semibold pb-[24px] text-white">informações de contato</h3>
                             <p className="lg:text-[15px] md:w-48 lg:w-full text-sm text-[#C1C3C7]">Estamos aqui para ajudar! Escolha a forma de comunicação que mais lhe convém e entre em contato conosco.</p>
                             <div className="pt-[80px] flex-col flex gap-[35px]">
-                                <div className="flex items-center md:gap-3 lg:gap-6">
+                                <div className="flex items-center md:gap-3 lg:gap-6" >
                                     <Image
                                         src="/icons/telefone.svg"
                                         alt="Icone telefone"
@@ -121,7 +129,7 @@ export const ContatoPage = () => {
                             </div>
                         </div>
                     </div>
-                    <form className="pt-[30px] flex items-center  md:items-start flex-col gap-4" onSubmit={sendEmail}>
+                    <form className="pt-[30px] flex items-center  md:items-start flex-col gap-4" onSubmit={sendEmail} data-aos="fade-left">
                         <label htmlFor="" className="flex flex-col items-start font-medium text-[#001659] text-[20px]">
                             Nome
                             <input
