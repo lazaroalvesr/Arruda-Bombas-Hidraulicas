@@ -8,7 +8,7 @@ export const EquipamentosCard = ({ descricao, images, preco, especificacoes, tit
         <section className="max-w-[1175px] flex m-auto items-start flex-col lg:my-[79px] md:my-[70px]">
             <div className="flex lg:flex-row md:flex-row flex-col w-full lg:gap-[21px]">
                 <Galeria images={images} galleryWidthProp={galleryWidthProp} />
-                <div className="lg:w-[574px] md:w-[370px] flex-col flex gap-[25px] mx-2 mt-[60px] lg:mt-0 md:mt-0">
+                <div className="lg:w-[574px] md:w-[370px] flex-col flex gap-[25px] lg:mx-2  mx-5 mt-[60px] lg:mt-0 md:mt-0">
                     <div>
                         <h2 className="font-bold lg:text-[36px] text-[32px]">{tituloEquipamento}</h2>
                         <p className="font-bold lg:text-[36px] text-[24px]">{preco}</p>

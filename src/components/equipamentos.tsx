@@ -15,7 +15,7 @@ export const EquipamentosPage = () => {
     }, []);
 
     return (
-        <section className="max-w-[1444px] flex m-auto items-center justify-center lg:my-[120px] my-[60px]" id="equipamento" data-aos="fade-up">
+        <section className="max-w-[1444px] flex m-auto items-center justify-center lg:my-0 lg:mt-12 mb-12" id="equipamento" data-aos="fade-up">
             <div className="flex flex-col items-center ">
                 <h1 className="text-[#001659] font-semibold text-[28px] text-center lg:text-[32px] ml-4 lg:ml-0">Nossos <span className="text-[#35558E]">Equipamentos!</span></h1>
                 <div className="flex pt-[52px] lg:w-[1200px] lg:gap-y-8 md:w-[800px] justify-center md:gap-[20px] md:flex-wrap lg:flex-row lg:gap-[21px] flex-col md:flex-row gap-y-8 ">

@@ -16,7 +16,7 @@ export const DesenvolvimentoPage = () => {
 
 
     return (
-        <section className="relative min-h-[600px] w-full">
+        <section className="relative min-h-[600px] w-full lg:mt-12">
             <div className="absolute inset-0">
                 <Image
                     src="/img/desenvolvimento.png"

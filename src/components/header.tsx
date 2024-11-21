@@ -20,7 +20,7 @@ export const HeaderPage = () => {
 
   return (
     <header className="border-b border-black">
-      <div className="max-w-7xl lg:mx-36 flex lg:justify-between md:justify-between py-5 items-center">
+      <div className="max-w-7xl lg:px-7  m-auto flex lg:justify-between md:justify-between py-5 items-center">
         <Link href="/">
           <div className=" flex items-center ml-4 lg:ml-0">
             <div className="h-12 px-4 lg:text-base text-sm w-64 lg:w-full bg-blue-900 rounded flex items-center justify-center text-white font-bold">

@@ -6,6 +6,7 @@ import Image from "next/image"
 import { FormEvent, useState, useEffect } from "react"
 import emailjs from '@emailjs/browser'
 import Link from "next/link"
+import { Mail, MapPin, Phone, Youtube, Instagram, Facebook } from "lucide-react"
 
 export const ContatoPage = () => {
     useEffect(() => {
@@ -61,71 +62,33 @@ export const ContatoPage = () => {
         <section className="max-w-[1175px] items-center justify-center flex m-auto lg:my-[60px] my-[60px] relative" id="contato">
             <div className="flex flex-col items-center text-center justify-center">
                 <h1 className="text-[#001659] font-semibold text-[28px] lg:text-[32px] ml-4 lg:ml-0">Entre em Contato</h1>
-                <div className="flex lg:flex-row lg:gap-14 gap-8 lg:pt-16 pt-[52px]">
-                    <div className="rounded-[10px] lg:flex hidden md:flex w-[260px] lg:w-[399px] text-start h-[746px] bg-[#00238C]" data-aos="fade-right">
-                        <div className="p-8">
-                            <h3 className="lg:text-[24px] text-[15px] font-semibold pb-[24px] text-white">informações de contato</h3>
-                            <p className="lg:text-[15px] md:w-48 lg:w-full text-sm text-[#C1C3C7]">Estamos aqui para ajudar! Escolha a forma de comunicação que mais lhe convém e entre em contato conosco.</p>
+                <div className="flex lg:flex-row lg:gap-14 gap-6 lg:pt-16 pt-[52px]">
+                    <div className="rounded-[10px] lg:flex hidden md:flex w-[320px] lg:w-[469px] text-start h-[746px] bg-[#00238C]" data-aos="fade-right">
+                        <div className="lg:p-8 p-6">
+                            <h3 className="lg:text-2xl text-[15px] font-semibold pb-[24px] text-white">informações de contato</h3>
+                            <p className="lg:text-[20px] w-full text-2xl md:text-base text-white">Estamos aqui para ajudar! Escolha a forma de comunicação que mais lhe convém e entre em contato conosco.</p>
                             <div className="pt-[80px] flex-col flex gap-[35px]">
                                 <div className="flex items-center md:gap-3 lg:gap-6" >
-                                    <Image
-                                        src="/icons/telefone.svg"
-                                        alt="Icone telefone"
-                                        width={33}
-                                        height={33}
-                                        className="lg:w-[33px] lg:h-[33px] w-[30px] h-[30px]"
-                                    />
+                                    <Phone className="w-8 h-8" color='white' />
                                     <h2 className="lg:text-[18px] text-white md:text-xs">(19) 97410-5318</h2>
                                 </div>
+                                <Link href="mailto:arrudabombashidraulicas@gmail.com" className="flex items-center md:gap-3 lg:gap-6">
+                                    <Mail className="w-8 h-8" color="white" />
+                                    <h2 className="lg:text-[18px] text-white md:text-xs">arrudabombashidraulicas@gmail.com</h2>
+                                </Link>
                                 <div className="flex items-center md:gap-3 lg:gap-6">
-                                    <Image
-                                        src="/icons/envelope.svg"
-                                        alt="Icone Email"
-                                        width={33}
-                                        height={33}
-                                        className="lg:w-[33px] lg:h-[33px] w-[30px] h-[30px]"
-                                    />
-                                    <h2 className="lg:text-[18px] text-white md:text-xs">lazaroalves12355@gmail.com</h2>
-                                </div>
-                                <div className="flex items-center md:gap-3 lg:gap-6">
-                                    <Image
-                                        src="/icons/map_white.svg"
-                                        alt="Icone Map"
-                                        width={33}
-                                        height={33}
-                                        className="lg:w-[33px] lg:h-[33px] w-[30px] h-[30px]"
-                                    />
+                                    <MapPin className="w-8 h-8" color='white' />
                                     <h2 className="lg:text-[18px] text-white">Hortolândia - SP</h2>
                                 </div>
                             </div>
                             <div className="flex items-center pt-[62px] gap-[12px]">
                                 <Link href="https://www.youtube.com/@arrudabombas" target="_blank">
-                                    <Image
-                                        src="/icons/yt_white.svg"
-                                        alt="Icone youtube"
-                                        width={53}
-                                        height={53}
-                                        className="lg:w-[53px] lg:h-[53px] w-[40px] h-[40px]"
-                                    />
+                                    <Youtube className="w-8 h-8" color='white' />
                                 </Link>
                                 <Link href="https://www.instagram.com/arrudabombashidraulicas7/" target="_blank">
-                                    <Image
-                                        src="/icons/insta_white.svg"
-                                        alt="Icone instagram"
-                                        width={53}
-                                        height={53}
-                                        className="lg:w-[53px] lg:h-[53px] w-[40px] h-[40px]"
-
-                                    />
+                                    <Instagram className="w-8 h-8" color='white' />
                                 </Link>
-                                <Image
-                                    src="/icons/face_white.svg"
-                                    alt="Icone facebook"
-                                    width={53}
-                                    height={53}
-                                    className="lg:w-[53px] lg:h-[53px] w-[40px] h-[40px]"
-
-                                />
+                                <Facebook className="w-8 h-8" color='white' />
                             </div>
                         </div>
                     </div>
@@ -226,12 +189,12 @@ export const ContatoPage = () => {
                             {successMessage && (
                                 <div className="mt-4 w-96 text-green-600">{successMessage}</div>
                             )}
-                            <button className="bg-[#001659] lg:right-0 absolute right-6 mt-[19px] md:right-4 cursor-pointer  text-white w-[224px] h-[48px] text-[22px] rounded-[10px]">Enviar</button>
+                            <button className="bg-[#001659] right-0 absolute mt-[19px] md:right-4 cursor-pointer  text-white w-[224px] h-[48px] text-[22px] rounded-[10px]">Enviar</button>
                         </div>
                     </form>
 
                 </div>
-                <p className="lg:text-base text-red-600 lg:mt-12 mt-[90px] md:mx-4 text-sm">
+                <p className="lg:text-base text-red-600 lg:mt-12 mt-[90px] px-8 lg:px-0 md:mx-4 text-sm">
                     Importante: Para a fabricação das Bombas de Concreto, é necessário que o caminhão de instalação seja fornecido pelo cliente, e ele deve estar equipado com sistema de freio a ar.
                 </p>
             </div>
