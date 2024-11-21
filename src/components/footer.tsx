@@ -81,7 +81,7 @@ export const FooterPage = () => {
                         </ul>
                     </div>
 
-                    <div className="space-y-6 pl-2 md:-mt-12 lg:pl-0 w-full grid md:grid-cols-2 lg:grid-cols-1 items-center md:gap-32">
+                    <div className="space-y-6 pl-2 md:-mt-12 lg:-mt-0 lg:pl-0 w-full grid md:grid-cols-2 lg:grid-cols-1 items-center lg:gap-0 md:gap-32">
                         <div className="w-40">
                             <h3 className="text-lg font-semibold text-[#00238C] mb-4">Redes Sociais</h3>
                             <div className="flex space-x-4">
