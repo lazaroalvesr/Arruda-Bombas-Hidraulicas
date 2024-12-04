@@ -54,27 +54,27 @@ export const FooterPage = () => {
                         <h3 className="text-lg font-semibold text-[#00238C]">Equipamentos</h3>
                         <ul className="space-y-2">
                             <li>
-                                <Link href="/p700" className="text-gray-600 hover:text-[#00238C] transition-colors">
+                                <Link href="/bomba-de-concreto/p700" className="text-gray-600 hover:text-[#00238C] transition-colors">
                                     P700
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/carretinha-pequena" className="text-gray-600 hover:text-[#00238C] transition-colors">
+                                <Link href="/bomba-de-concreto/carretinha-pequena" className="text-gray-600 hover:text-[#00238C] transition-colors">
                                     Carretinha Pequena
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/carretinha-rebocavel" className="text-gray-600 hover:text-[#00238C] transition-colors">
+                                <Link href="/bomba-de-concreto/carretinha-rebocavel" className="text-gray-600 hover:text-[#00238C] transition-colors">
                                     Carretinha rebocável
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/caminhao-multimix" className="text-gray-600 hover:text-[#00238C] transition-colors">
+                                <Link href="/bomba-de-concreto/caminhao-multimix" className="text-gray-600 hover:text-[#00238C] transition-colors">
                                     Caminhão MultiMix
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/betonbomba" className="text-gray-600 hover:text-[#00238C] transition-colors">
+                                <Link href="/bomba-de-concreto/betonbomba" className="text-gray-600 hover:text-[#00238C] transition-colors">
                                     Betonbomba
                                 </Link>
                             </li>
