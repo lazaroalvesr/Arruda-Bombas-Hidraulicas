@@ -69,7 +69,7 @@ export const FooterPage = () => {
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/bomba-de-concreto/caminhao-multimix" className="text-gray-600 hover:text-[#00238C] transition-colors">
+                                <Link href="/bomba-de-concreto/multimix" className="text-gray-600 hover:text-[#00238C] transition-colors">
                                     Caminhão MultiMix
                                 </Link>
                             </li>
