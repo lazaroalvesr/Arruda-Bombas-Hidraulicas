@@ -59,7 +59,7 @@ export const ContatoPage = () => {
     const whatsappLink = `https://api.whatsapp.com/send?phone=5519974105318&text=${encodeURIComponent(message)}`;
 
     return (
-        <section className="max-w-[1175px] items-center justify-center flex m-auto lg:my-[60px] my-[60px] relative" id="contato">
+        <section className="lg:max-w-[1175px] items-center justify-center flex m-auto lg:my-[60px] my-[60px] relative" id="contato">
             <div className="flex flex-col items-center text-center justify-center">
                 <h1 className="text-[#001659] font-semibold text-[28px] lg:text-[32px] ml-4 lg:ml-0">Entre em Contato</h1>
                 <div className="flex lg:flex-row lg:gap-14 gap-6 lg:pt-16 pt-[52px]">
