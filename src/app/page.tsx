@@ -8,7 +8,7 @@ export default function Home() {
     <div>
       <IntialPage />
       <EquipamentosPage />
-      {/* <DesenvolvimentoPage /> */}
+      <DesenvolvimentoPage />
       <ContatoPage />
     </div>
   );

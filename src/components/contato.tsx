@@ -13,6 +13,8 @@ export const ContatoPage = () => {
         AOS.init({
             duration: 1000,
             once: true,
+            disable: false,
+            startEvent: 'DOMContentLoaded',
         });
     }, []);
 
@@ -63,22 +65,22 @@ export const ContatoPage = () => {
             <div className="flex flex-col items-center text-center justify-center">
                 <h1 className="text-[#001659] font-semibold text-[28px] lg:text-[32px] ml-4 lg:ml-0">Entre em Contato</h1>
                 <div className="flex lg:flex-row lg:gap-14 gap-6 lg:pt-16 pt-[52px]">
-                    <div className="rounded-[10px] lg:flex hidden md:flex w-[320px] lg:w-[469px] text-start h-[746px] bg-[#00238C]" data-aos="fade-right">
+                    <div className="rounded-[10px] lg:flex hidden w-[320px] lg:w-[429px] md:hidden text-start h-[746px] bg-[#00238C]" data-aos="fade-down">
                         <div className="lg:p-8 p-6">
                             <h3 className="lg:text-2xl text-[15px] font-semibold pb-[24px] text-white">informações de contato</h3>
-                            <p className="lg:text-[20px] w-full text-2xl md:text-base text-white">Estamos aqui para ajudar! Escolha a forma de comunicação que mais lhe convém e entre em contato conosco.</p>
+                            <p className="lg:text-[15px] w-full text-2xl md:text-base text-white">Estamos aqui para ajudar! Escolha a forma de comunicação que mais lhe convém e entre em contato conosco.</p>
                             <div className="pt-[80px] flex-col flex gap-[35px]">
                                 <div className="flex items-center md:gap-3 lg:gap-6" >
                                     <Phone className="w-8 h-8" color='white' />
-                                    <h2 className="lg:text-[18px] text-white md:text-xs">(19) 97410-5318</h2>
+                                    <h2 className="lg:text-[15px] text-white md:text-xs">(19) 97410-5318</h2>
                                 </div>
                                 <Link href="mailto:arrudabombashidraulicas@gmail.com" className="flex items-center md:gap-3 lg:gap-6">
                                     <Mail className="w-8 h-8" color="white" />
-                                    <h2 className="lg:text-[18px] text-white md:text-xs">arrudabombashidraulicas@gmail.com</h2>
+                                    <h2 className="lg:text-[15px] text-white md:text-xs">arrudabombashidraulicas@gmail.com</h2>
                                 </Link>
                                 <div className="flex items-center md:gap-3 lg:gap-6">
                                     <MapPin className="w-8 h-8" color='white' />
-                                    <h2 className="lg:text-[18px] text-white">Hortolândia - SP</h2>
+                                    <h2 className="lg:text-[15px] text-white">Hortolândia - SP</h2>
                                 </div>
                             </div>
                             <div className="flex items-center pt-[62px] gap-[12px]">
@@ -92,7 +94,7 @@ export const ContatoPage = () => {
                             </div>
                         </div>
                     </div>
-                    <form className="pt-[30px] flex items-center  md:items-start flex-col gap-4" onSubmit={sendEmail} data-aos="fade-left">
+                    <form className="pt-[30px] flex items-center  md:items-start flex-col gap-4" onSubmit={sendEmail} data-aos="fade-up">
                         <label htmlFor="" className="flex flex-col items-start font-medium text-[#001659] text-[20px]">
                             Nome
                             <input

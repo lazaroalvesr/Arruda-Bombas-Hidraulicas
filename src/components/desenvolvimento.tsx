@@ -31,11 +31,11 @@ export const DesenvolvimentoPage = () => {
 
             <div className="relative max-w-7xl mx-auto px-4 py-20 md:py-32" data-aos="fade-right">
                 <div className="max-w-2xl">
-                    <h1 className="text-3xl md:text-4xl font-bold text-white mb-6">
+                    <h1 className="text-2xl lg:text-3xl md:text-4xl font-bold text-white mb-6">
                         Desenvolvimento de Equipamentos Sob Medida
                     </h1>
 
-                    <p className="text-gray-200 text-lg mb-8">
+                    <p className="text-gray-200 text-[15px] mb-8">
                         Na Arruda Bombas, projetamos cada equipamento com precisão para atender às necessidades específicas do seu projeto. Com engenharia avançada e inovação, garantimos eficiência máxima no bombeamento de concreto usinado. Nossos equipamentos são testados e aperfeiçoados para oferecer desempenho superior em qualquer condição.
                     </p>
 
