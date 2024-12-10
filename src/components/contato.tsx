@@ -7,6 +7,7 @@ import { FormEvent, useState, useEffect } from "react"
 import emailjs from '@emailjs/browser'
 import Link from "next/link"
 import { Mail, MapPin, Phone, Youtube, Instagram, Facebook } from "lucide-react"
+import { sendGTMEvent } from '@next/third-parties/google'
 
 export const ContatoPage = () => {
     useEffect(() => {
@@ -191,7 +192,12 @@ export const ContatoPage = () => {
                             {successMessage && (
                                 <div className="mt-4 w-96 text-green-600">{successMessage}</div>
                             )}
-                            <button className="bg-[#001659] right-0 absolute mt-[19px] md:right-4 cursor-pointer  text-white w-[224px] h-[48px] text-[22px] rounded-[10px]">Enviar</button>
+                            <button
+                                className="bg-[#001659] right-0 absolute mt-[19px] md:right-4 cursor-pointer  text-white w-[224px] h-[48px] text-[22px] rounded-[10px]"
+                                onClick={() => sendGTMEvent({ event: 'buttonClicked', value: "BUY" })}
+                            >
+                                Enviar
+                            </button>
                         </div>
                     </form>
 

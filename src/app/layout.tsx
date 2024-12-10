@@ -4,7 +4,7 @@ import { Poppins } from "next/font/google";
 import { HeaderPage } from "@/components/header";
 import { FooterPage } from "@/components/footer";
 import { Analytics } from "@vercel/analytics/react"
-import Script from "next/script";
+import { GoogleTagManager } from '@next/third-parties/google'
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -65,25 +65,10 @@ export default function RootLayout({
       <head>
         <link rel="shortcut icon" href="/icons/Icon.png" type="image/png" />
       </head>
-      <Script
-        async
-        src="https://www.googletagmanager.com/gtag/js?id=AW-16806649058"
-      />
-      <Script
-        id="google-analytics"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'AW-16806649058');
-            `
-        }}
-      />
       <body className={poppins.className}>
         <HeaderPage />
         {children}
+        <GoogleTagManager gtmId="GT-WF8FZJ8Z" />
         <Analytics />
         <FooterPage />
       </body>
