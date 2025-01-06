@@ -68,7 +68,7 @@ export default function RootLayout({
       <body className={poppins.className}>
         <HeaderPage />
         {children}
-        <GoogleTagManager gtmId="GT-WF8FZJ8Z" />
+        <GoogleTagManager gtmId="AW-16806649058" />
         <Analytics />
         <FooterPage />
       </body>
