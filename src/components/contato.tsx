@@ -214,9 +214,9 @@ export const ContatoPage = () => {
                     rel="noopener noreferrer"
                     onClick={() => {
                         sendGTMEvent({
-                            event: 'whatsapp_click',
-                            category: 'Contact',
-                            label: 'Floating WhatsApp Button'
+                            event: 'whatsapp_click',  // Nome do evento
+                            event_category: 'Contact',  // Parâmetro de categoria
+                            event_label: 'Floating WhatsApp Button'  // Parâmetro de rótulo
                         });
                     }}
                     className="relative cursor-pointer group"
@@ -233,7 +233,6 @@ export const ContatoPage = () => {
                     </span>
                 </Link>
             </div>
-
         </section>
     )
 }
