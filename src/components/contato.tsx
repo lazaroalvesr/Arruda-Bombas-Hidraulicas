@@ -208,7 +208,19 @@ export const ContatoPage = () => {
                 </p>
             </div>
             <div className="fixed right-10 bottom-10">
-                <Link href={whatsappLink} target="_blank" rel="noopener noreferrer" className="relative cursor-pointer group">
+                <Link
+                    href={whatsappLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => {
+                        sendGTMEvent({
+                            event: 'whatsapp_click',
+                            category: 'Contact',
+                            label: 'Floating WhatsApp Button'
+                        });
+                    }}
+                    className="relative cursor-pointer group"
+                >
                     <Image
                         src="/icons/whatsapp.png"
                         alt="Ícone WhatsApp"
