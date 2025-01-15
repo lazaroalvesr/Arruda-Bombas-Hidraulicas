@@ -22,10 +22,7 @@ export const IntialPage = () => {
                     <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
                         <div className="flex flex-col lg:flex-row items-center justify-between">
                             <div className="sm:text-center lg:text-left lg:w-1/2" data-aos="fade-right">
-                                <h1 className="text-4xl tracking-tight font-bold text-gray-900 sm:text-5xl md:text-6xl">
-                                    <span className="block text-blue-900">Bombeamento de Alta</span>
-                                    <span className="block text-blue-900">Precisão</span>
-                                </h1>
+                                <h1 className="text-4xl tracking-tight font-bold text-[#1e3a8a] lg:w-[520px] sm:text-5xl md:text-[64px]">Bombeamento de Alta Precisão</h1>
                                 <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
                                     Na Arruda Bombas, oferecemos soluções avançadas para o bombeamento de concreto usinado. Descubra como nossa tecnologia pode elevar seu projeto a um novo nível. Entre em contato e encontre a melhor solução do mercado.
                                 </p>

@@ -136,8 +136,11 @@ export const ContatoPage = () => {
                                     onChange={handleChange}
                                     className="lg:w-[302px] md:w-[210px] w-[330px] outline-none border-b-2 mt-1 border-black font-normal h-[50px] text-sm pl-4"
                                     required
+                                    defaultValue="Escolha o equipamento"
                                 >
-                                    <option value="Escolha o equipamento" selected disabled className="text-gray-400">Escolha o equipamento</option>
+                                    <option value="Escolha o equipamento" disabled className="text-gray-400">
+                                        Escolha o equipamento
+                                    </option>
                                     <option value="Carretinha Pequena" className="text-gray-800">Carretinha Pequena</option>
                                     <option value="Carretinha Rebocável" className="text-gray-800">Carretinha Rebocável</option>
                                     <option value="P700" className="text-gray-800">P700</option>
@@ -155,8 +158,11 @@ export const ContatoPage = () => {
                                             onChange={(e) => setSelectedMotor(e.target.value)}
                                             className="lg:w-[302px] md:w-[210px] w-[330px] outline-none border-b-2 mt-1 border-black font-normal h-[50px] text-sm pl-4"
                                             required
+                                            defaultValue="Escolha o motor"
                                         >
-                                            <option value="Escolha o motor" selected disabled className="text-gray-400">Escolha o motor</option>
+                                            <option value="Escolha o motor" disabled className="text-gray-400">
+                                                Escolha o motor
+                                            </option>
                                             <option value="Motor Elétrico" className="text-gray-800">Motor Elétrico</option>
                                             <option value="Motor a Diesel" className="text-gray-800">Motor a Diesel</option>
                                         </select>
@@ -171,8 +177,11 @@ export const ContatoPage = () => {
                                             onChange={(e) => setSelectedMotor(e.target.value)}
                                             className="lg:w-[302px] md:w-[210px] w-[300px] outline-none border-b-2 mt-1 border-black font-normal h-[50px] text-sm pl-4"
                                             required
+                                            defaultValue="Escolha o motor"
                                         >
-                                            <option value="Escolha o motor" selected disabled className="text-gray-400">Escolha o motor</option>
+                                            <option value="Escolha o motor" disabled className="text-gray-400">
+                                                Escolha o motor
+                                            </option>
                                             <option value="Perkins 4CC" className="text-gray-800">Perkins 4CC</option>
                                             <option value="MWM 4CC" className="text-gray-800">MWM 4CC</option>
                                         </select>
@@ -194,10 +203,10 @@ export const ContatoPage = () => {
                                 <div className="mt-4 w-96 text-green-600">{successMessage}</div>
                             )}
                             <button
-                                className="bg-[#001659] right-0 absolute mt-[19px] md:right-4 cursor-pointer  text-white w-[224px] h-[48px] text-[22px] rounded-[10px]"
+                                className="bg-[#001659] right-0 absolute mt-[19px] md:right-4 cursor-pointer  text-white w-[280px] h-[48px] text-[20px] rounded-[10px]"
                                 onClick={() => sendGTMEvent({ event: 'buttonClicked', value: "BUY" })}
                             >
-                                Enviar
+                                Solicitar Orçamento
                             </button>
                         </div>
                     </form>
@@ -206,7 +215,7 @@ export const ContatoPage = () => {
                 <p className="lg:text-base text-red-600 lg:mt-12 mt-[90px] px-8 lg:px-0 md:mx-4 text-sm">
                     Importante: Para a fabricação das Bombas de Concreto, é necessário que o caminhão de instalação seja fornecido pelo cliente, e ele deve estar equipado com sistema de freio a ar.
                 </p>
-            </div>
+            </div >
             <div className="fixed right-10 bottom-10">
                 <Link
                     href={whatsappLink}
@@ -214,9 +223,9 @@ export const ContatoPage = () => {
                     rel="noopener noreferrer"
                     onClick={() => {
                         sendGTMEvent({
-                            event: 'whatsapp_click',  
+                            event: 'whatsapp_click',
                             event_category: 'Contact',
-                            event_label: 'Floating WhatsApp Button'  
+                            event_label: 'Floating WhatsApp Button'
                         });
                     }}
                     className="relative cursor-pointer group"
