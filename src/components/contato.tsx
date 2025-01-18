@@ -41,7 +41,7 @@ export const ContatoPage = () => {
             celular: celular
         };
 
-        emailjs.send("service_cy8i1cp", "template_5q7b1ps", templateParams, "MUihn924koQBFDrhZ")
+        emailjs.send(process.env.NEXT_PUBLIC_SERVICE_ID as string, process.env.NEXT_PUBLIC_TEMPLATE_ID as string, templateParams,process.env.NEXT_PUBLIC_USER_ID as string)
             .then((response) => {
                 console.log('Email enviado', response.status, response.text);
                 setName('');
