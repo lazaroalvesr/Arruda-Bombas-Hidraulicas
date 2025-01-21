@@ -26,9 +26,14 @@ export const ContatoPage = () => {
     const [equipment, setEquipment] = useState('');
     const [selectedMotor, setSelectedMotor] = useState('');
     const [successMessage, setSuccessMessage] = useState('')
-
+    const [errorMessage, setErrorMessage] = useState('')
 
     function sendEmail(e: FormEvent) {
+        if (!name || !email || !celular || !mensagem || !equipment || !selectedMotor) {
+            setErrorMessage('Por favor, preencha todos os campos para enviar a mensagem.')
+            return
+        }
+
         e.preventDefault()
         setSuccessMessage('Sua mensagem foi enviada com sucesso! Alguém irá responder o mais rápido possível.')
 
@@ -201,6 +206,10 @@ export const ContatoPage = () => {
                         <div className="flex gap-28 ">
                             {successMessage && (
                                 <div className="mt-4 w-96 text-green-600">{successMessage}</div>
+                            )}
+                            {errorMessage && (
+                                <div className="mt-4 w-96 text-red-600">{successMessage}</div>
+
                             )}
                             <button
                                 className="bg-[#001659] right-0 absolute mt-[19px] md:right-4 cursor-pointer  text-white w-[280px] h-[48px] text-[20px] rounded-[10px]"
