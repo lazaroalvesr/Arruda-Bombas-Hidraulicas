@@ -73,7 +73,7 @@ export const ContatoPage = () => {
         <section className="lg:max-w-[1175px] items-center justify-center flex m-auto lg:my-[60px] my-[60px] relative" id="contato">
             <div className="flex flex-col items-center text-center justify-center">
                 <h1 className="text-[#001659] font-semibold text-[28px] lg:text-[32px] ml-4 lg:ml-0">Entre em Contato</h1>
-                <div className="flex lg:flex-row lg:gap-14 gap-6 lg:pt-16 pt-[52px]">
+                <div className="flex lg:flex-row lg:gap-14 gap-6 lg:pt-16 pt-[20px]">
                     <div className="rounded-[10px] lg:flex hidden w-[320px] lg:w-[429px] md:hidden text-start h-[746px] bg-[#00238C]" data-aos="fade-down">
                         <div className="lg:p-8 p-6">
                             <h3 className="lg:text-2xl text-[15px] font-semibold pb-[24px] text-white">informações de contato</h3>
@@ -205,7 +205,7 @@ export const ContatoPage = () => {
                                 placeholder="Olá, gostaria de saber mais sobre as bombas de concreto. Qual é a capacidade de bombeamento?"
                                 className="lg:w-[726px]  md:w-[500px]  w-[330px] placeholder:text-sm placeholder:w-[430px] font-normal text-base resize-none outline-none border-b-2 mt-1 border-black h-[194px] p-4" name="" id="" />
                         </label>
-                        <div className="flex lg:flex-row flex-col items-center lg:gap-28 ">
+                        <div className="flex lg:flex-row flex-col items-center lg:items-start lg:gap-0 ">
                             <div className=''>
                                 {successMessage && (
                                     <div className="mt-4 w-96 h-16 text-green-600">{successMessage}</div>
@@ -216,7 +216,7 @@ export const ContatoPage = () => {
                             </div>
                             <button
                                 type="submit"
-                                className="bg-[#001659] right-0 lg:absolute lg:mt-[80px] md:right-4 cursor-pointer  text-white w-[280px] h-[48px] text-[20px] rounded-[10px]"
+                                className="bg-[#001659] right-0 lg:absolute lg:mt-[20px] md:right-4 cursor-pointer  text-white w-[280px] h-[48px] text-[20px] rounded-[10px]"
                                 onClick={() => sendGTMEvent({ event: 'buttonClicked', value: "BUY" })}>
                                 Solicitar Orçamento
                             </button>
