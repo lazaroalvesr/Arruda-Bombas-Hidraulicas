@@ -205,16 +205,18 @@ export const ContatoPage = () => {
                                 placeholder="Olá, gostaria de saber mais sobre as bombas de concreto. Qual é a capacidade de bombeamento?"
                                 className="lg:w-[726px]  md:w-[500px]  w-[330px] placeholder:text-sm placeholder:w-[430px] font-normal text-base resize-none outline-none border-b-2 mt-1 border-black h-[194px] p-4" name="" id="" />
                         </label>
-                        <div className="flex gap-28 ">
-                            {successMessage && (
-                                <div className="mt-4 w-96 text-green-600">{successMessage}</div>
-                            )}
-                            {errorMessage && (
-                                <div className="mt-4 w-96 text-red-600">{errorMessage}</div>
-                            )}
+                        <div className="flex lg:flex-row flex-col items-center lg:gap-28 ">
+                            <div className=''>
+                                {successMessage && (
+                                    <div className="mt-4 w-96 h-16 text-green-600">{successMessage}</div>
+                                )}
+                                {errorMessage && (
+                                    <div className="h-16 mt-4 w-96 text-red-600">{errorMessage}</div>
+                                )}
+                            </div>
                             <button
                                 type="submit"
-                                className="bg-[#001659] right-0 absolute mt-[19px] md:right-4 cursor-pointer  text-white w-[280px] h-[48px] text-[20px] rounded-[10px]"
+                                className="bg-[#001659] right-0 lg:absolute lg:mt-[19px] md:right-4 cursor-pointer  text-white w-[280px] h-[48px] text-[20px] rounded-[10px]"
                                 onClick={() => sendGTMEvent({ event: 'buttonClicked', value: "BUY" })}>
                                 Solicitar Orçamento
                             </button>
@@ -222,7 +224,7 @@ export const ContatoPage = () => {
                     </form>
 
                 </div>
-                <p className="lg:text-base text-red-600 lg:mt-12 mt-[90px] px-8 lg:px-0 md:mx-4 text-sm">
+                <p className="lg:text-base text-red-600 lg:mt-12 mt-[40px] px-8 lg:px-0 md:mx-4 text-sm">
                     Importante: Para a fabricação das Bombas de Concreto, é necessário que o caminhão de instalação seja fornecido pelo cliente, e ele deve estar equipado com sistema de freio a ar.
                 </p>
             </div >
