@@ -29,12 +29,13 @@ export const ContatoPage = () => {
     const [errorMessage, setErrorMessage] = useState('')
 
     function sendEmail(e: FormEvent) {
+        e.preventDefault()
+
         if (!name || !email || !celular || !mensagem || !equipment || !selectedMotor) {
             setErrorMessage('Por favor, preencha todos os campos para enviar a mensagem.')
             return
         }
 
-        e.preventDefault()
         setSuccessMessage('Sua mensagem foi enviada com sucesso! Alguém irá responder o mais rápido possível.')
 
         sendGTMEvent({ event: 'buttonClicked', value: "BUY" });
@@ -208,13 +209,12 @@ export const ContatoPage = () => {
                                 <div className="mt-4 w-96 text-green-600">{successMessage}</div>
                             )}
                             {errorMessage && (
-                                <div className="mt-4 w-96 text-red-600">{successMessage}</div>
-
+                                <div className="mt-4 w-96 text-red-600">{errorMessage}</div>
                             )}
                             <button
+                                type="submit"
                                 className="bg-[#001659] right-0 absolute mt-[19px] md:right-4 cursor-pointer  text-white w-[280px] h-[48px] text-[20px] rounded-[10px]"
-                                onClick={() => sendGTMEvent({ event: 'buttonClicked', value: "BUY" })}
-                            >
+                                onClick={() => sendGTMEvent({ event: 'buttonClicked', value: "BUY" })}>
                                 Solicitar Orçamento
                             </button>
                         </div>
