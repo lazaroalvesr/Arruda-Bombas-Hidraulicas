@@ -57,6 +57,7 @@ export const ContatoPage = () => {
                 setCelular('');
                 setEquipment('');
                 setSelectedMotor('');
+                setSuccessMessage('')
             }, (err) => {
                 console.log('Erro:', err);
             });
