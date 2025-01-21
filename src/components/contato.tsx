@@ -33,11 +33,12 @@ export const ContatoPage = () => {
 
         if (!name || !email || !celular || !mensagem || !equipment || !selectedMotor) {
             setErrorMessage('Por favor, preencha todos os campos para enviar a mensagem.')
+            setSuccessMessage('')
             return
         }
 
         setSuccessMessage('Sua mensagem foi enviada com sucesso! Alguém irá responder o mais rápido possível.')
-
+        setErrorMessage('')
         sendGTMEvent({ event: 'buttonClicked', value: "BUY" });
 
         const templateParams = {
