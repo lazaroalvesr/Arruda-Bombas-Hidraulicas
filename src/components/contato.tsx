@@ -216,7 +216,7 @@ export const ContatoPage = () => {
                             </div>
                             <button
                                 type="submit"
-                                className="bg-[#001659] right-0 lg:absolute lg:mt-[19px] md:right-4 cursor-pointer  text-white w-[280px] h-[48px] text-[20px] rounded-[10px]"
+                                className="bg-[#001659] right-0 lg:absolute lg:mt-[80px] md:right-4 cursor-pointer  text-white w-[280px] h-[48px] text-[20px] rounded-[10px]"
                                 onClick={() => sendGTMEvent({ event: 'buttonClicked', value: "BUY" })}>
                                 Solicitar Orçamento
                             </button>
