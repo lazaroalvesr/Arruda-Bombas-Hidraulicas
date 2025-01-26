@@ -60,7 +60,7 @@ export const HeaderPage = () => {
 
   return (
     <header className="fixed w-full bg-[#f7f7f767]/95 backdrop-blur-sm z-50 shadow-sm">
-      <div className="max-w-7xl lg:px-7 m-auto flex lg:justify-between md:justify-between py-4 items-center">
+      <div className="max-w-7xl lg:px-7 m-auto flex lg:justify-between md:justify-between py-5 items-center">
         <Link href="/" className="flex items-center justify-center gap-2 ml-5 lg:ml-0">
           <Image src="/icon.png" alt="Icone concreto" width={30} height={30} className="flex" />
           <h1 className="font-bold text-[#1f3b8b] w-44 lg:w-full md:w-72 text-sm sm:text-base">

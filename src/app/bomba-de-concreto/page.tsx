@@ -2,7 +2,7 @@ import { CardEquipamentos } from "@/components/cardEquipamentos";
 
 export default function EquipamentosPage() {
     return (
-        <section className="max-w-[1175px] flex m-auto items-start pt-[120px] pb-[80px]" id="equipamento">
+        <section className="max-w-[1175px] flex m-auto items-start pt-[140px] pb-[70px]" id="equipamento">
             <div className="flex flex-col   m-auto">
                 <div className="flex">
                     <h1 className="text-[#35558E] font-semibold text-[28px]  lg:text-[32px] ml-4 lg:ml-0">Equipamentos</h1>
