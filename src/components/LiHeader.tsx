@@ -1,13 +1,25 @@
-import { LiHeaderProps } from "@/lib/interface";
-import Link from "next/link";
+"use client"
 
-export const LiHeader = ({ href, nome }: LiHeaderProps) => {
-    return (
-        <li className="relative"> 
-            <Link href={href} className="text-gray-900 hover:text-blue-900 px-3 py-2 text-base font-medium block w-72 lg:w-full text-center hover:bg-blue-100 rounded transition duration-200">
-                {nome}
-            </Link>
+import Link from "next/link"
+import { motion } from "framer-motion"
 
-        </li>
-    );
-};
+interface LiHeaderProps {
+  href: string
+  nome: string
+  isActive: boolean
+}
+
+export const LiHeader = ({ href, nome, isActive }: LiHeaderProps) => {
+  return (
+    <motion.li
+      className={`lg:ml-8 my-4 lg:my-0 text-center ${isActive ? "text-blue-600 font-semibold" : "text-gray-700"}`}
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 0.95 }}
+    >
+      <Link href={href} className="hover:text-blue-600 transition-colors">
+        {nome}
+      </Link>
+    </motion.li>
+  )
+}
+

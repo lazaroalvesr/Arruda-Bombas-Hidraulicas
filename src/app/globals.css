@@ -45,3 +45,26 @@ body {
 html {
   scroll-behavior: smooth;
 }
+/* Barra de rolagem */
+::-webkit-scrollbar {
+  width: 8px; /* Largura da barra de rolagem */
+  height: 8px; /* Altura da barra de rolagem horizontal */
+}
+
+/* Parte da barra de rolagem que pode ser arrastada (polegar) */
+::-webkit-scrollbar-thumb {
+  background-color: #A0A0A0; /* Cor do polegar */
+  border-radius: 10px; /* Bordas arredondadas */
+  transition: background-color 0.3s ease; /* Transição suave */
+}
+
+/* Alteração de cor do polegar ao passar o mouse */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #666666; /* Cor mais escura ao passar o mouse */
+}
+
+/* Track da barra de rolagem */
+::-webkit-scrollbar-track {
+  background-color: transparent; /* Transparente para um efeito minimalista */
+  border-radius: 10px;
+}

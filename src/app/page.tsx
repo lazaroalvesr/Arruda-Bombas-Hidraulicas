@@ -1,5 +1,5 @@
 import { ContatoPage } from "@/components/contato";
-import { DesenvolvimentoPage } from "@/components/desenvolvimento";
+import  SecaoEquipamento  from "@/components/desenvolvimento";
 import { EquipamentosPage } from "@/components/equipamentos";
 import { IntialPage } from "@/components/initial";
 
@@ -8,7 +8,7 @@ export default function Home() {
     <div>
       <IntialPage />
       <EquipamentosPage />
-      <DesenvolvimentoPage />
+      <SecaoEquipamento />
       <ContatoPage />
     </div>
   );

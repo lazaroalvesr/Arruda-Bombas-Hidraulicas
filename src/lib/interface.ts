@@ -48,3 +48,16 @@ export interface LiFooterProps {
     href: string
     nome: string
 }
+
+export interface EquipamentoProps {
+    id: number
+    name: string
+    price: string
+    image: string
+    link: string
+}
+
+export interface FooterSectionProps {
+    titulo: string
+    links: LiFooterProps[]
+}

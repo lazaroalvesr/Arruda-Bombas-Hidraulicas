@@ -4,9 +4,9 @@ import Link from "next/link"
 
 export const CardEquipamentos = ({ href, price, src, title }: CardEquipamentosProps) => {
     return (
-        <div className="w-[345px] cursor-pointer h-[573px] border-2 border-[#BEBFC3] rounded-lg">
+        <div className="w-[345px] cursor-pointer h-[573px] border-2 border-[#ececec87] rounded-lg shadow-md">
             <div className="flex items-center justify-center flex-col m-auto pt-[26px]">
-                <div className="border-2 flex items-center border-[#BEBFC3] rounded-lg w-[292px] h-[328px]">
+                <div className="bg-[#f2f2f2]">
                     <Image
                         src={src}
                         alt="Foto do equipamento"
@@ -22,10 +22,10 @@ export const CardEquipamentos = ({ href, price, src, title }: CardEquipamentosPr
                     </div>
                     <div className="pt-[17px] flex gap-[20px]">
                         <Link href="/#contato">
-                            <button className="bg-[#001659] hover:scale-105 cursor-pointer transition-transform duration-300 text-white rounded-[10px] w-[136px] h-[48px]">Quero Essa!</button>
+                            <button className="bg-blue-600 hover:scale-105 cursor-pointer transition-transform duration-300 text-[#f7f7f7f7] rounded-[10px] w-[136px] h-[48px]">Quero Essa!</button>
                         </Link>
                         <Link href={href}>
-                            <button className="bg-white hover:scale-105 cursor-pointer transition-transform border-[#001659] border-2 duration-300 text-black rounded-[10px] w-[136px] h-[48px]">Saiba Mais</button>
+                            <button className="hover:scale-105 cursor-pointer transition-transform duration-300 text-gray-900 rounded-[10px] w-[136px] h-[48px]">Saiba Mais</button>
                         </Link>
                     </div>
                 </div>

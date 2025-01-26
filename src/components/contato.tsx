@@ -1,24 +1,26 @@
 "use client"
 
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 import Image from "next/image"
-import { FormEvent, useState, useEffect } from "react"
+import { FormEvent, useState, } from "react"
 import emailjs from '@emailjs/browser'
 import Link from "next/link"
-import { Mail, MapPin, Phone, Youtube, Instagram, Facebook } from "lucide-react"
+import { Mail, MapPin, Phone } from "lucide-react"
 import { sendGTMEvent } from '@next/third-parties/google'
+import { motion } from "framer-motion"
+import { FiYoutube } from "react-icons/fi";
+import { FiFacebook } from "react-icons/fi";
+import { FaInstagram } from "react-icons/fa";
+import { formatTelephone } from '@/lib/formattedPhone';
+
+const equipamentos = [
+    { name: "Carretinha Pequena", motores: ['Motor Elétrico', 'Motor a Diesel'] },
+    { name: "Carretinha Rebocável", motores: ['Perkins 4CC', 'MWM 4CC'] },
+    { name: "P700" },
+    { name: "Caminhão MultiMix" },
+    { name: "Betonbomba" }
+];
 
 export const ContatoPage = () => {
-    useEffect(() => {
-        AOS.init({
-            duration: 1000,
-            once: true,
-            disable: false,
-            startEvent: 'DOMContentLoaded',
-        });
-    }, []);
-
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [mensagem, setMensagem] = useState('')
@@ -28,10 +30,19 @@ export const ContatoPage = () => {
     const [successMessage, setSuccessMessage] = useState('')
     const [errorMessage, setErrorMessage] = useState('')
 
+
     function sendEmail(e: FormEvent) {
         e.preventDefault()
+        console.log({
+            name,
+            email,
+            celular,
+            mensagem,
+            equipment,
+            selectedMotor
+        });
 
-        if (!name || !email || !celular || !mensagem || !equipment || !selectedMotor) {
+        if (!name || !email || !celular || !mensagem || !equipment) {
             setErrorMessage('Por favor, preencha todos os campos para enviar a mensagem.')
             setSuccessMessage('')
             return
@@ -63,200 +74,254 @@ export const ContatoPage = () => {
             }, (err) => {
                 console.log('Erro:', err);
             });
+
     }
 
     const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
         setEquipment(e.target.value);
+        setSelectedMotor('')
     };
+
+    const handleMotorChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+        setSelectedMotor(e?.target.value)
+    }
+
+    const selectedEquipamento = equipamentos.find(
+        (equipmento) => equipmento.name === equipment
+    )
+
+    const itemVariants = {
+        hidden: { y: 20, opacity: 0 },
+        visible: {
+            y: 0,
+            opacity: 1,
+        },
+    }
 
     const message = "Oi, tudo bem? Vim pelo site Arruda Bombas Hidráulicas, gostaria de solicitar um orçamento.";
     const whatsappLink = `https://api.whatsapp.com/send?phone=5519974105318&text=${encodeURIComponent(message)}`;
 
     return (
-        <section className="lg:max-w-[1175px] items-center justify-center flex m-auto lg:my-[60px] my-[60px] relative" id="contato">
-            <div className="flex flex-col items-center text-center justify-center">
-                <h1 className="text-[#001659] font-semibold text-[28px] lg:text-[32px] ml-4 lg:ml-0">Entre em Contato</h1>
-                <div className="flex lg:flex-row lg:gap-14 gap-6 lg:pt-16 pt-[20px]">
-                    <div className="rounded-[10px] lg:flex hidden w-[320px] lg:w-[429px] md:hidden text-start h-[746px] bg-[#00238C]" data-aos="fade-down">
-                        <div className="lg:p-8 p-6">
-                            <h3 className="lg:text-2xl text-[15px] font-semibold pb-[24px] text-white">informações de contato</h3>
-                            <p className="lg:text-[15px] w-full text-2xl md:text-base text-white">Estamos aqui para ajudar! Escolha a forma de comunicação que mais lhe convém e entre em contato conosco.</p>
-                            <div className="pt-[80px] flex-col flex gap-[35px]">
-                                <div className="flex items-center md:gap-3 lg:gap-6" >
-                                    <Phone className="w-8 h-8" color='white' />
-                                    <h2 className="lg:text-[15px] text-white md:text-xs">(19) 97410-5318</h2>
+        <section className="bg-[#f8fafc]">
+            <div className="lg:max-w-[1175px] items-center justify-center flex m-auto lg:py-[60px] py-[80px] relative" id="contato">
+                <div className="flex flex-col items-center text-center justify-center">
+                    <motion.div variants={itemVariants} className="text-center space-y-4">
+                        <h2 className="text-4xl font-bold text-gray-900 ">Entre em Contato</h2>
+                        <p className="lg:text-lg px-4 lg:px-0 text-gray-600 max-w-2xl mx-auto">
+                            Estamos aqui para ajudar! Escolha a forma de comunicação que mais lhe convém.
+                        </p>
+                    </motion.div>
+                    <div className="flex lg:flex-row md:flex-row flex-col-reverse gap-8 items-start mt-12">
+                        <motion.div
+                            variants={itemVariants}
+                            className="lg:col-span-2 bg-[#f8fafc] rounded-2xl lg:w-[451px] md:w-[380px] md:hidden lg:flex shadow-xl p-8 border border-gray-100">
+                            <div className="space-y-8 ">
+                                <div className="space-y-6">
+                                    <h3 className="text-2xl font-semibold text-gray-900">Informações de Contato</h3>
+                                    <p className="text-gray-600">Nossa equipe está disponível para atender todas as suas necessidades.</p>
                                 </div>
-                                <Link href="mailto:arrudabombashidraulicas@gmail.com" className="flex items-center md:gap-3 lg:gap-6">
-                                    <Mail className="w-8 h-8" color="white" />
-                                    <h2 className="lg:text-[15px] text-white md:text-xs">arrudabombashidraulicas@gmail.com</h2>
-                                </Link>
-                                <div className="flex items-center md:gap-3 lg:gap-6">
-                                    <MapPin className="w-8 h-8" color='white' />
-                                    <h2 className="lg:text-[15px] text-white">Hortolândia - SP</h2>
+
+                                <div className="space-y-6">
+                                    <div
+                                        className="flex items-center space-x-4 hover:scale-105 transition .3s ease-in text-gray-600 hover:text-blue-600 ">
+                                        <div className="flex-shrink-0 w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
+                                            <Phone className="w-5 h-5 text-blue-600" />
+                                        </div>
+                                        <Link
+                                            href={whatsappLink}
+                                            target="_blank"
+                                            rel="noopener noreferrer">
+                                            (19) 97410-5318</Link>
+                                    </div>
+                                    <motion.a
+                                        whileHover={{ scale: 1.02 }}
+                                        href="mailto:arrudabombashidraulicas@gmail.com"
+                                        className="flex items-center space-x-4 text-gray-600 hover:text-blue-600 transition-colors">
+                                        <div className="flex-shrink-0 w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
+                                            <Mail className="w-5 h-5 text-blue-600" />
+                                        </div>
+                                        <span className="break-all lg:text-base text-[13px]">arrudabombashidraulicas@gmail.com</span>
+                                    </motion.a>
+
+                                    <div className="flex items-center space-x-4 text-gray-600">
+                                        <div className="flex-shrink-0 w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
+                                            <MapPin className="w-5 h-5 text-blue-600" />
+                                        </div>
+                                        <span>Hortolândia - SP</span>
+                                    </div>
+                                </div>
+
+                                <div className="pt-6 border-t border-gray-100">
+                                    <div className="flex space-x-6">
+                                        <motion.a whileHover={{ scale: 1.1 }} href="#" className="text-gray-400 hover:text-gray-500">
+                                            <FiYoutube className="w-7 h-6" />
+                                        </motion.a>
+                                        <motion.a whileHover={{ scale: 1.1 }} href="#" className="text-gray-400 hover:text-gray-500">
+                                            <FaInstagram className="w-6 h-6" />
+                                        </motion.a>
+                                        <motion.a whileHover={{ scale: 1.1 }} href="#" className="text-gray-400 hover:text-gray-500">
+                                            <FiFacebook className="w-6 h-6" />
+                                        </motion.a>
+                                    </div>
                                 </div>
                             </div>
-                            <div className="flex items-center pt-[62px] gap-[12px]">
-                                <Link href="https://www.youtube.com/@arrudabombas" target="_blank">
-                                    <Youtube className="w-8 h-8" color='white' />
-                                </Link>
-                                <Link href="https://www.instagram.com/arrudabombashidraulicas7/" target="_blank">
-                                    <Instagram className="w-8 h-8" color='white' />
-                                </Link>
-                                <Facebook className="w-8 h-8" color='white' />
-                            </div>
-                        </div>
+                        </motion.div>
+                        <motion.div
+                            variants={itemVariants}
+                            className="lg:col-span-3 bg-[#f8fafc] rounded-2xl shadow-xl md:w-[700px] lg:w-fit p-8 border border-gray-100">
+                            <form onSubmit={sendEmail}>
+                                <div className='flex flex-col w-full  gap-4 text-[#333333]'>
+                                    <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-4">
+                                        <div className='flex flex-col text-start gap-2'>
+                                            <label htmlFor="name" className="block text-sm font-medium text-gray-700">
+                                                Nome
+                                            </label>
+                                            <input
+                                                type='text'
+                                                id='name'
+                                                name='name'
+                                                value={name}
+                                                onChange={(e) => setName(e.target.value)}
+                                                className='bg-slate-100 p-3 rounded-md col-span-1 border-gray-200 border'
+                                                placeholder='Digite seu nome Completo'
+                                                required
+                                            />
+                                        </div>
+                                        <div className='flex flex-col text-start gap-2'>
+                                            <label htmlFor="whatsapp" className="block text-sm font-medium text-gray-700">
+                                                WhatsApp
+                                            </label>
+                                            <input
+                                                type='tel'
+                                                id='whatsapp'
+                                                name='whatsapp'
+                                                value={celular}
+                                                onChange={(e) => setCelular(formatTelephone(e.target.value))}
+                                                className='bg-slate-100 p-3 rounded-md col-span-1 border-gray-200 border'
+                                                placeholder="(99) 99999-9999"
+                                                required
+                                            />
+                                        </div>
+                                    </div>
+                                    <div className='flex flex-col col-span-2 text-start gap-2'>
+                                        <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+                                            Email
+                                        </label>
+                                        <input
+                                            type='text'
+                                            id='email'
+                                            name='email'
+                                            value={email}
+                                            onChange={(e) => setEmail(e.target.value)}
+                                            className='bg-slate-100 p-3 rounded-md border-gray-200 border'
+                                            placeholder="seu@email.com"
+                                            required
+                                        />
+                                    </div>
+                                    <div className='grid lg:grid-cols-2 grid-cols-1 md:grid-cols-2 lg:w-[710px] gap-4 justify-between'>
+                                        <div className='grid gap-2 text-start'>
+                                            <label htmlFor="equipment" className="block text-sm font-medium text-gray-700">
+                                                Equipamento de Interesse
+                                            </label>
+                                            <select
+                                                id="equipment"
+                                                name="equipment"
+                                                onChange={handleChange}
+                                                className="bg-slate-100 p-3 rounded-md col-span-1  w-80 lg:w-full border-gray-200 border"
+                                                value={equipment}>
+                                                <option disabled value="">
+                                                    Escolha o equipamento
+                                                </option>
+                                                {equipamentos.map((equipamento, index) => (
+                                                    <option key={index} value={equipamento.name}>
+                                                        {equipamento.name}
+                                                    </option>
+                                                ))}
+                                            </select>
+
+                                        </div>
+                                        {selectedEquipamento?.motores && (
+                                            <div className="flex text-start flex-col gap-2">
+                                                <label htmlFor="motor" className="block text-sm font-medium text-gray-700">
+                                                    Escolha o Motor
+                                                </label>
+                                                <select
+                                                    id="motor"
+                                                    name="motor"
+                                                    className="bg-slate-100 p-3 rounded-md w-80 lg:w-full border-gray-200 border"
+                                                    value={selectedMotor}
+                                                    required
+                                                    onChange={handleMotorChange}>
+                                                    <option disabled value="">
+                                                        Escolha o motor
+                                                    </option>
+                                                    {selectedEquipamento.motores.map((motor, index) => (
+                                                        <option key={index} value={motor}>
+                                                            {motor}
+                                                        </option>
+                                                    ))}
+                                                </select>
+                                            </div>
+                                        )}
+                                    </div>
+                                    <div className="col-span-2">
+                                        <label htmlFor="mensagem" className="block text-start text-sm font-medium">
+                                            Mensagem
+                                        </label>
+                                        <textarea
+                                            id="mensagem"
+                                            name="mensagem"
+                                            value={mensagem}
+                                            onChange={(e) => setMensagem(e.target.value)}
+                                            className="bg-slate-100 p-3 rounded-md resize-none h-32 mt-2 border-gray-200 border w-full"
+                                            placeholder="Digite sua mensagem aqui"
+                                            required
+                                        />
+                                    </div>
+                                </div>
+                                <div className='flex justify-between  gap-14 mt-2'>
+                                    <div className='text-start text-sm flex'>
+                                        {successMessage && (
+                                            <div className="mt-4 w-80 text-green-600">{successMessage}</div>
+                                        )}
+                                        {errorMessage && (
+                                            <div className=" mt-4 w-80 text-red-600">{errorMessage}</div>
+                                        )}
+                                    </div>
+                                    <button type='submit' className='bg-blue-600 py-2 text-nowrap px-12 h-fit rounded-md text-[#f7f7f7f7]'>
+                                        Solicitar Orçamento
+                                    </button>
+                                </div>
+                            </form>
+                        </motion.div>
+                    </div >
+                    <div className="fixed right-10 bottom-10">
+                        <Link
+                            href={whatsappLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            onClick={() => {
+                                sendGTMEvent({
+                                    event: 'whatsapp_click',
+                                    event_category: 'Contact',
+                                    event_label: 'Floating WhatsApp Button'
+                                });
+                            }}
+                            className="relative cursor-pointer group">
+                            <Image
+                                src="/icons/whatsapp.png"
+                                alt="Ícone WhatsApp"
+                                width={50}
+                                height={50}
+                                className="hover:cursor-pointer lg:w-[50px]"
+                            />
+                            <span className="absolute transform top-[67px] lg:w-[220px] lg:-left-36 -left-32 w-[200px] -translate-x-1/2 -translate-y-full bg-gray-800 text-white text-base p-2 rounded opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                                Tem dúvidas? Vamos conversar!
+                            </span>
+                        </Link>
                     </div>
-                    <form className="pt-[30px] flex items-center  md:items-start flex-col gap-4" onSubmit={sendEmail} data-aos="fade-up">
-                        <label htmlFor="" className="flex flex-col items-start font-medium text-[#001659] text-[20px]">
-                            Nome
-                            <input
-                                placeholder="Nome Completo"
-                                onChange={(e) => setName(e.target.value)}
-                                value={name}
-                                type="text"
-                                required
-                                className="lg:w-[726px] md:w-[500px] w-[330px] placeholder:text-sm outline-none font-normal border-b-2 mt-1 border-black  text-base h-[50px] pl-4" name="" id="" />
-                        </label>
-                        <label htmlFor="" className="flex flex-col items-start font-medium text-[#001659] text-[20px]">
-                            Email
-                            <input
-                                type="email"
-                                onChange={(e) => setEmail(e.target.value)}
-                                value={email}
-                                placeholder="email@email.com"
-                                required
-                                className="lg:w-[726px]  md:w-[500px]  w-[330px] placeholder:text-sm outline-none  font-normal border-b-2 mt-1 border-black text-base h-[50px] pl-4" name="" id="" />
-                        </label>
-                        <label htmlFor="" className="flex flex-col items-start text-[#001659] text-[20px]">
-                            Whatsapp
-                            <input
-                                placeholder="99 99999-9999"
-                                type="number"
-                                onChange={(e) => setCelular(e.target.value)}
-                                value={celular}
-                                required
-                                className="lg:w-[726px] md:w-[500px]  w-[330px] placeholder:text-sm outline-none font-normal border-b-2 mt-1 border-black text-base h-[50px] pl-4" typeof="tel" name="" id="" />
-                        </label>
-                        <div className="flex gap-8 lg:flex-row flex-col md:flex-row">
-                            <div className="flex flex-col items-start">
-                                <label htmlFor="equipment-select">Equipamento de Interesse</label>
-                                <select
-                                    id="equipment-select"
-                                    name="equipment"
-                                    onChange={handleChange}
-                                    className="lg:w-[302px] md:w-[210px] w-[330px] outline-none border-b-2 mt-1 border-black font-normal h-[50px] text-sm pl-4"
-                                    required
-                                    defaultValue="Escolha o equipamento"
-                                >
-                                    <option value="Escolha o equipamento" disabled className="text-gray-400">
-                                        Escolha o equipamento
-                                    </option>
-                                    <option value="Carretinha Pequena" className="text-gray-800">Carretinha Pequena</option>
-                                    <option value="Carretinha Rebocável" className="text-gray-800">Carretinha Rebocável</option>
-                                    <option value="P700" className="text-gray-800">P700</option>
-                                    <option value="Caminhão MultiMix" className="text-gray-800">Caminhão MultiMix</option>
-                                    <option value="Betonbomba" className="text-gray-800">Betonbomba</option>
-                                </select>
-                            </div>
-
-                            <div className="flex flex-col items-start">
-                                {equipment === "Carretinha Pequena" && (
-                                    <>
-                                        <label htmlFor="motor-select">Escolha o Motor</label>
-                                        <select
-                                            id="motor-select"
-                                            onChange={(e) => setSelectedMotor(e.target.value)}
-                                            className="lg:w-[302px] md:w-[210px] w-[330px] outline-none border-b-2 mt-1 border-black font-normal h-[50px] text-sm pl-4"
-                                            required
-                                            defaultValue="Escolha o motor"
-                                        >
-                                            <option value="Escolha o motor" disabled className="text-gray-400">
-                                                Escolha o motor
-                                            </option>
-                                            <option value="Motor Elétrico" className="text-gray-800">Motor Elétrico</option>
-                                            <option value="Motor a Diesel" className="text-gray-800">Motor a Diesel</option>
-                                        </select>
-                                    </>
-                                )}
-
-                                {equipment === "Carretinha Rebocável" && (
-                                    <>
-                                        <label htmlFor="motor-select">Escolha o Motor</label>
-                                        <select
-                                            id="motor-select"
-                                            onChange={(e) => setSelectedMotor(e.target.value)}
-                                            className="lg:w-[302px] md:w-[210px] w-[300px] outline-none border-b-2 mt-1 border-black font-normal h-[50px] text-sm pl-4"
-                                            required
-                                            defaultValue="Escolha o motor"
-                                        >
-                                            <option value="Escolha o motor" disabled className="text-gray-400">
-                                                Escolha o motor
-                                            </option>
-                                            <option value="Perkins 4CC" className="text-gray-800">Perkins 4CC</option>
-                                            <option value="MWM 4CC" className="text-gray-800">MWM 4CC</option>
-                                        </select>
-                                    </>
-                                )}
-                            </div>
-                        </div>
-                        <label htmlFor="" className="flex flex-col items-start text-[#001659] font-medium text-[20px]">
-                            Mensagem
-                            <textarea
-                                onChange={(e) => setMensagem(e.target.value)}
-                                value={mensagem}
-                                required
-                                placeholder="Olá, gostaria de saber mais sobre as bombas de concreto. Qual é a capacidade de bombeamento?"
-                                className="lg:w-[726px]  md:w-[500px]  w-[330px] placeholder:text-sm placeholder:w-[430px] font-normal text-base resize-none outline-none border-b-2 mt-1 border-black h-[194px] p-4" name="" id="" />
-                        </label>
-                        <div className="flex lg:flex-row flex-col items-center lg:items-start lg:gap-0 ">
-                            <div className=''>
-                                {successMessage && (
-                                    <div className="mt-4 w-96 h-16 text-green-600">{successMessage}</div>
-                                )}
-                                {errorMessage && (
-                                    <div className="h-16 mt-4 w-96 text-red-600">{errorMessage}</div>
-                                )}
-                            </div>
-                            <button
-                                type="submit"
-                                className="bg-[#001659] right-0 lg:absolute lg:mt-[20px] md:right-4 cursor-pointer  text-white w-[280px] h-[48px] text-[20px] rounded-[10px]"
-                                onClick={() => sendGTMEvent({ event: 'buttonClicked', value: "BUY" })}>
-                                Solicitar Orçamento
-                            </button>
-                        </div>
-                    </form>
-
                 </div>
-                <p className="lg:text-base text-red-600 lg:mt-12 mt-[40px] px-8 lg:px-0 md:mx-4 text-sm">
-                    Importante: Para a fabricação das Bombas de Concreto, é necessário que o caminhão de instalação seja fornecido pelo cliente, e ele deve estar equipado com sistema de freio a ar.
-                </p>
             </div >
-            <div className="fixed right-10 bottom-10">
-                <Link
-                    href={whatsappLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    onClick={() => {
-                        sendGTMEvent({
-                            event: 'whatsapp_click',
-                            event_category: 'Contact',
-                            event_label: 'Floating WhatsApp Button'
-                        });
-                    }}
-                    className="relative cursor-pointer group"
-                >
-                    <Image
-                        src="/icons/whatsapp.png"
-                        alt="Ícone WhatsApp"
-                        width={70}
-                        height={70}
-                        className="hover:cursor-pointer"
-                    />
-                    <span className="absolute -left-24 transform top-[67px] -translate-x-1/2  -translate-y-full bg-gray-800 text-white text-base p-2 rounded opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                        Tem dúvidas? Vamos conversar!
-                    </span>
-                </Link>
-            </div>
-        </section>
+        </section >
     )
 }

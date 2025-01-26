@@ -14,24 +14,36 @@ export const EquipamentosCard = ({ descricao, images, preco, especificacoes, tit
                         <p className="font-bold lg:text-[36px] text-[24px]">{preco}</p>
                     </div>
                     <div>
-                        <p className="font-medium lg:text-[20px] md:text-sm">{descricao}</p>
+                        <p className="font-normal lg:text-base/7 md:text-sm text-[#777]">{descricao}</p>
                         <span className="bg-[#DCDDDF] w-full h-0.5 flex my-[19px]"></span>
                         {motor ? (
                             <div>
                                 <h4>Opções de motor:</h4>
                                 <p className="flex items-center gap-2 mt-[14px]">
-                                    <span className="border w-[30px] h-[30px] border-[#A0A0A0] rounded-md"></span>
-                                    {motor.motor1}
+                                    <input
+                                        type="radio"
+                                        id="motor1"
+                                        name="motor"
+                                        value={motor.motor1}
+                                        className="w-[24px] h-[24px] border-[#A0A0A0] rounded-md"
+                                    />
+                                    <label htmlFor="motor1" className="text-sm">{motor.motor1}</label>
                                 </p>
                                 <p className="flex items-center gap-2 mt-[14px]">
-                                    <span className="border w-[30px] h-[30px] border-[#A0A0A0] rounded-md"></span>
-                                    {motor.motor2}
+                                    <input
+                                        type="radio"
+                                        id="motor2"
+                                        name="motor"
+                                        value={motor.motor2}
+                                        className="w-[24px] h-[24px] border-[#A0A0A0] rounded-md"
+                                    />
+                                    <label htmlFor="motor2" className="text-sm">{motor.motor2}</label>
                                 </p>
                             </div>
                         ) : null}
                     </div>
                     <Link href="/#contato">
-                        <button className="bg-[#253043] w-full text-white rounded-md lg:w-[271px] h-[54px]">Solicitar Orçamento</button>
+                        <button className="bg-blue-600 w-full text-[#f7f7f7f7] rounded-md lg:w-[271px] h-[54px]">Solicitar Orçamento</button>
                     </Link>
                 </div>
             </div>
@@ -40,7 +52,7 @@ export const EquipamentosCard = ({ descricao, images, preco, especificacoes, tit
                     <h2 className="font-medium text-[24px]">Especificações</h2>
                 </div>
                 <div className="border border-[#DCDDDF] mx-1 rounded-md mt-[30px]">
-                    <ul className="px-8 lg:py-8 py-4 flex gap-8 flex-col">
+                    <ul className="px-12 lg:py-12 py-4 flex gap-5 flex-col">
                         {especificacoes.map((item, index) => (
                             <LiEquipamentoUnico key={index} titulo={item.tituloEspecificacoes} text={item.textEspecificacoes} />
                         ))}
