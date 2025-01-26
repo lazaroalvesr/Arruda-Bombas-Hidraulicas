@@ -279,10 +279,10 @@ export const ContatoPage = () => {
                                         />
                                     </div>
                                 </div>
-                                <div className='flex justify-between  gap-14 mt-2'>
+                                <div className='flex justify-between lg:flex-row md:flex-row flex-col-reverse lg:gap-14 gap-8 mt-2'>
                                     <div className='text-start text-sm flex'>
                                         {successMessage && (
-                                            <div className="mt-4 w-80 text-green-600">{successMessage}</div>
+                                            <div className="lg:mt-4 w-80 text-green-600">{successMessage}</div>
                                         )}
                                         {errorMessage && (
                                             <div className=" mt-4 w-80 text-red-600">{errorMessage}</div>
