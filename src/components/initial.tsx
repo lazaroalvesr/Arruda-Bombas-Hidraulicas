@@ -73,7 +73,7 @@ export const IntialPage = () => {
                             >
                                 <div className="h-full flex items-end justify-end">
                                     <Image
-                                        src="/img/img_initial.png"
+                                        src="/img/foto_principal.png"
                                         alt="Foto Carretinha elétrica"
                                         width={400}
                                         height={553}
