@@ -4,8 +4,6 @@ Arruda Bombas Hidráulicas é uma plataforma dedicada à venda e fornecimento de
 
 ![App Screenshot](./public/img/arruda-bombas-hidraulicas.png)
 
-Acesse o [site](https://arrudabombas.com.br/).
-
 Este projeto utiliza o **next/font** para otimizar automaticamente a fonte Geist, uma família de fontes nova da Vercel. Além disso, utilizamos o **Motion** para animações suaves e dinâmicas, tornando a navegação mais interativa. O envio de formulários é feito através do **EmailJS**, permitindo que os usuários enviem mensagens diretamente do site sem a necessidade de configuração de um servidor backend.
 
 ## Tecnologias Utilizadas:
@@ -15,6 +13,8 @@ Este projeto utiliza o **next/font** para otimizar automaticamente a fonte Geist
 - **Tailwind CSS**: Para estilização responsiva e design moderno.
 - **Motion**: Para animações dinâmicas e transições suaves.
 - **EmailJS**: Para envio de formulários diretamente para o e-mail do administrador.
+
+Acesse o [site](https://arrudabombas.com.br/).
 
 ## Authors
 
