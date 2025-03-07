@@ -33,14 +33,6 @@ export const ContatoPage = () => {
 
     function sendEmail(e: FormEvent) {
         e.preventDefault()
-        console.log({
-            name,
-            email,
-            celular,
-            mensagem,
-            equipment,
-            selectedMotor
-        });
 
         if (!name || !email || !celular || !mensagem || !equipment) {
             setErrorMessage('Por favor, preencha todos os campos para enviar a mensagem.')
