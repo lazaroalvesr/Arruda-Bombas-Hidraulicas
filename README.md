@@ -6,8 +6,6 @@ Arruda Bombas Hidráulicas é uma plataforma dedicada à venda e fornecimento de
 ![App Screenshot](./public/img/arruda-bombas-hidraulicas.png)
 
 Acesse o [site](https://arrudabombas.com.br/)
-Este projeto utiliza next/font para otimizar automaticamente a fonte Geist, uma família de fontes nova da Vercel.
-
 
 ## Tecnologias Utilizadas:
 
