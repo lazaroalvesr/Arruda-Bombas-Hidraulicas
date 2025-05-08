@@ -115,17 +115,17 @@ export const ContatoPage = () => {
                                 </div>
 
                                 <div className="space-y-6">
-                                    <div
+                                    {/* <div
                                         className="flex items-center space-x-4 hover:scale-105 transition .3s ease-in text-gray-600 hover:text-blue-600 ">
                                         <div className="flex-shrink-0 w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
                                             <Phone className="w-5 h-5 text-blue-600" />
                                         </div>
-                                        {/* <Link
+                                        <Link
                                             href={whatsappLink}
                                             target="_blank"
                                             rel="noopener noreferrer">
-                                            (19) 97410-5318</Link> */}
-                                    </div>
+                                            (19) 97410-5318</Link> 
+                                    </div> */}
                                     <motion.a
                                         whileHover={{ scale: 1.02 }}
                                         href="mailto:arrudabombashidraulicas@gmail.com"
