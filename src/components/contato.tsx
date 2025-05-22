@@ -92,7 +92,7 @@ export const ContatoPage = () => {
     }
 
     const message = "Oi, tudo bem? Vim pelo site Arruda Bombas Hidráulicas, gostaria de solicitar um orçamento.";
-    // const whatsappLink = `https://api.whatsapp.com/send?phone=5519974105318&text=${encodeURIComponent(message)}`;
+    const whatsappLink = `https://api.whatsapp.com/send?phone=5519974105318&text=${encodeURIComponent(message)}`;
 
     return (
         <section className="bg-[#f8fafc]">
@@ -115,7 +115,7 @@ export const ContatoPage = () => {
                                 </div>
 
                                 <div className="space-y-6">
-                                    {/* <div
+                                    <div
                                         className="flex items-center space-x-4 hover:scale-105 transition .3s ease-in text-gray-600 hover:text-blue-600 ">
                                         <div className="flex-shrink-0 w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
                                             <Phone className="w-5 h-5 text-blue-600" />
@@ -124,8 +124,8 @@ export const ContatoPage = () => {
                                             href={whatsappLink}
                                             target="_blank"
                                             rel="noopener noreferrer">
-                                            (19) 97410-5318</Link> 
-                                    </div> */}
+                                            (19) 97410-5318</Link>
+                                    </div>
                                     <motion.a
                                         whileHover={{ scale: 1.02 }}
                                         href="mailto:arrudabombashidraulicas@gmail.com"
@@ -288,7 +288,7 @@ export const ContatoPage = () => {
                             </form>
                         </motion.div>
                     </div >
-                    {/* <div className="fixed right-10 bottom-10">
+                    <div className="fixed right-10 bottom-10">
                         <Link
                             href={whatsappLink}
                             target="_blank"
@@ -312,7 +312,7 @@ export const ContatoPage = () => {
                                 Tem dúvidas? Vamos conversar!
                             </span>
                         </Link>
-                    </div> */}
+                    </div>
                 </div>
             </div >
         </section >
