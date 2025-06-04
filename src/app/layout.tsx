@@ -49,7 +49,6 @@ export const metadata: Metadata = {
   },
 };
 
-
 export const viewport = {
   width: 'device-width',
   initialScale: 1.0,
@@ -72,6 +71,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-5V6KGQQJ')`}}
         />
+        <meta name="google-site-verification" content="Ll3cuhcpQG1efeEhIG708aH1R7-dHIXffqQS3OZL1Zw" />
       </head>
       <body className={poppins.className}>
         <iframe
