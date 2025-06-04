@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.arrudabombas.com.br
+
+# Sitemaps
+Sitemap: https://www.arrudabombas.com.br/sitemap.xml
