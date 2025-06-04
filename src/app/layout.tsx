@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     'bombas de concreto para pré-moldados',
     'serviços de bombeamento de concreto',
     'como escolher uma bomba de concreto',
-    'eficiência das bombas de concreto'
+    'eficiência das bombas de concreto' 
   ],
   openGraph: {
     title: 'Arruda Bombas Hidráulicas',
