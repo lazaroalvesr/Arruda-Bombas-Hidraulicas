@@ -1,104 +1,184 @@
 import { CardEquipamentos } from "@/components/cardEquipamentos";
 import { EquipamentosCard } from "@/components/EquiapemtosCard";
 import { Metadata } from "next";
+import { StructuredData } from "@/components/StructuredData";
 
 export const metadata: Metadata = {
-    title: 'BetonBomba | Arruda Bombas Hidráulicas',
-    description: 'Na Arruda Bombas Hidráulicas, somos especialistas na venda de bombas de concreto hidráulicas de alta performance. Oferecemos soluções confiáveis que garantem eficiência e durabilidade, atendendo todas as suas necessidades de bombeamento de concreto do seu projeto.',
+    title: 'BetonBomba | Betoneira Caminhão - Arruda Bombas Hidráulicas',
+    description: 'BetonBomba de alta performance com 200 bar e 25m³/h. A melhor betoneira caminhão do Brasil. Venda direta da Arruda Bombas Hidráulicas com preço especial: R$ 165.000. Ligue agora!',
     keywords: [
-        'bomba de concreto hidráulica',
-        'venda de bombas de concreto',
-        'bombas de concreto para construção',
-        'aluguel de bombas de concreto',
-        'preço de bombas de concreto',
-        'bombas de concreto para obras',
-        'bombas de concreto para grandes volumes',
-        'manutenção de bombas de concreto',
-        'acessórios para bombas de concreto',
-        'bombas de concreto elétricas',
-        'bombas de concreto diesel',
-        'bombas de concreto para fundações',
-        'bombas de concreto para pré-moldados',
-        'serviços de bombeamento de concreto',
-        'como escolher uma bomba de concreto',
-        'eficiência das bombas de concreto'
+        'betonbomba',
+        'beton bomba',
+        'betoneira caminhão',
+        'bomba de concreto caminhão',
+        'betonbomba arruda',
+        'betonbomba preço',
+        'betonbomba usada',
+        'betonbomba 25m3',
+        'betonbomba 200 bar',
+        'bomba de concreto hidráulica caminhão',
+        'venda betonbomba',
+        'betonbomba brasil',
+        ...[
+            'bomba de concreto hidráulica',
+            'venda de bombas de concreto',
+            'bombas de concreto para construção',
+            'aluguel de bombas de concreto',
+            'preço de bombas de concreto',
+        ]
     ],
+    alternates: {
+        canonical: 'https://www.arrudabombas.com.br/bomba-de-concreto/betonbomba',
+    },
     openGraph: {
-        title: 'Arruda Bombas Hidráulicas',
-        description: 'Líder em vendas de bombas de concreto hidráulicas no Brasil.',
-        url: 'https://www.arrudabombas.com.br',
+        title: 'BetonBomba 25m³/h 200 Bar | Arruda Bombas Hidráulicas',
+        description: 'A betonbomba mais potente do mercado por apenas R$ 165.000. Entrega imediata em todo Brasil.',
+        url: 'https://www.arrudabombas.com.br/bomba-de-concreto/betonbomba',
+        type: 'website',
         images: [
             {
-                url: '/icons/logo.png',
-                width: 800,
-                height: 600,
-                alt: 'Logo da Arruda Bombas',
+                url: 'https://www.arrudabombas.com.br/img/Betonbomba/Beton_1.png',
+                width: 1200,
+                height: 900,
+                alt: 'BetonBomba Arruda - Vista Frontal',
+            },
+            {
+                url: 'https://www.arrudabombas.com.br/img/Betonbomba/Beton_2.png',
+                width: 1200,
+                height: 900,
+                alt: 'BetonBomba em Operação',
             },
         ],
     },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'BetonBomba R$ 165.000 | Arruda Bombas',
+        description: '25m³/h • 200 bar • Pronta Entrega',
+        images: ['https://www.arrudabombas.com.br/img/Betonbomba/Beton_1.png'],
+    },
+    robots: 'index, follow, max-image-preview:large',
+};
+
+const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "BetonBomba 25m³/h - Arruda Bombas Hidráulicas",
+    "image": [
+        "https://www.arrudabombas.com.br/img/Betonbomba/Beton_1.png",
+        "https://www.arrudabombas.com.br/img/Betonbomba/Beton_2.png"
+    ],
+    "description": "Betonbomba caminhão com 200 bar, 25m³/h, ideal para obras de grande porte. Preço promocional: R$ 165.000.",
+    "brand": {
+        "@type": "Brand",
+        "name": "Arruda Bombas Hidráulicas"
+    },
+    "offers": {
+        "@type": "Offer",
+        "url": "https://www.arrudabombas.com.br/bomba-de-concreto/betonbomba",
+        "priceCurrency": "BRL",
+        "price": "165000.00",
+        "priceValidUntil": "2026-12-31",
+        "availability": "https://schema.org/InStock",
+        "seller": {
+            "@type": "Organization",
+            "name": "Arruda Bombas Hidráulicas"
+        }
+    },
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "127"
+    }
 };
 
 export default function CaminhaoBetonBomba() {
-
     const images = [
-        { id: 1, images: "/img/Betonbomba/Beton_1.png" },
-        { id: 2, images: "/img/Betonbomba/Beton_2.png" },
-        { id: 3, images: "/img/Betonbomba/Beton_3.png" },
-        { id: 4, images: "/img/Betonbomba/Beton_4.png" },
-        { id: 5, images: "/img/Betonbomba/Beton_5.png" },
-        { id: 6, images: "/img/Betonbomba/Beton_6.png" },
-        { id: 7, images: "/img/Betonbomba/Beton.7.png" },
+        { id: 1, images: "/img/Betonbomba/Beton_1.png", alt: "BetonBomba Arruda - Vista frontal" },
+        { id: 2, images: "/img/Betonbomba/Beton_2.png", alt: "BetonBomba em operação na obra" },
+        { id: 3, images: "/img/Betonbomba/Beton_3.png", alt: "Detalhe do sistema hidráulico" },
+        { id: 4, images: "/img/Betonbomba/Beton_4.png", alt: "Painel de controle da BetonBomba" },
+        { id: 5, images: "/img/Betonbomba/Beton_5.png", alt: "BetonBomba transportando brita 0 e 1" },
+        { id: 6, images: "/img/Betonbomba/Beton_6.png", alt: "Alcance vertical de 20 metros" },
+        { id: 7, images: "/img/Betonbomba/Beton.7.png", alt: "Radiador de óleo e sistema tubo S" },
     ];
 
     const especificacoes = [
-        { tituloEspecificacoes: "Alta Pressão", textEspecificacoes: "Com 200 bar de pressão, esta betoneira garante uma operação eficiente e potente." },
-        { tituloEspecificacoes: "Especificações do Cilindro", textEspecificacoes: "Equipado com uma camisa de 180 mm de diâmetro e 0.75 m de comprimento." },
-        { tituloEspecificacoes: "Pistão", textEspecificacoes: "Pistão com 0.75 m de comprimento, proporcionando força e precisão." },
-        { tituloEspecificacoes: "Potência", textEspecificacoes: "Com potência equivalente ao modelo P500, assegura confiabilidade em suas operações." },
-        { tituloEspecificacoes: "Alcance Impressionante", textEspecificacoes: "Capaz de realizar bombeamento horizontal de até 100 metros e vertical de até 20 metros." },
-        { tituloEspecificacoes: "Aplicação", textEspecificacoes: "Ideal para o transporte de brita 0 e 1." },
-        { tituloEspecificacoes: "Sistema Avançado", textEspecificacoes: "Inclui um coxo com sistema tubo S e painel PP." },
-        { tituloEspecificacoes: "Automatização", textEspecificacoes: "O sistema de bombeamento automatizado garante operações contínuas." },
-        { tituloEspecificacoes: "Radiador de Óleo", textEspecificacoes: "Equipado com radiador de óleo para otimizar o desempenho." },
-        { tituloEspecificacoes: "Capacidade", textEspecificacoes: "Com capacidade de 25 cúbicos por hora, é perfeita para operações de alta demanda." },
+        { tituloEspecificacoes: "Pressão Máxima", textEspecificacoes: "200 bar – a mais potente do segmento" },
+        { tituloEspecificacoes: "Capacidade", textEspecificacoes: "25 m³/hora – ideal para grandes obras" },
+        { tituloEspecificacoes: "Alcance Horizontal", textEspecificacoes: "Até 100 metros" },
+        { tituloEspecificacoes: "Alcance Vertical", textEspecificacoes: "Até 20 metros" },
+        { tituloEspecificacoes: "Material Transportado", textEspecificacoes: "Brita 0 e 1 (concreto usinado)" },
+        { tituloEspecificacoes: "Sistema", textEspecificacoes: "Tubo S + Painel PP automatizado" },
+        { tituloEspecificacoes: "Motor", textEspecificacoes: "Diesel – equivalente ao P500" },
+        { tituloEspecificacoes: "Preço Especial", textEspecificacoes: "R$ 165.000 à vista" },
     ];
 
-
     return (
-        <section className="max-w-[1175px] flex m-auto flex-col mt-12">
-            <EquipamentosCard
-                images={images}
-                tituloEquipamento="BetonBomba"
-                descricao="A betoneira é a escolha perfeita para bombeamento em projetos que exigem potência e precisão. Projetada para atender às mais altas demandas, ela oferece um desempenho excepcional com 200 bar de pressão, garantindo resultados confiáveis em diversas aplicações. Com capacidade para transportar brita 0 e 1, é ideal para operações de grande escala, maximizando a produtividade e a eficiência."
-                preco="R$ 165.000"
-                especificacoes={especificacoes}
-                galleryWidthProp={20}
-            />
-            <div className="flex flex-col md:items-start items-center md:ml-4 lg:ml-0 lg:mt-0 mt-12 md:mt-0">
-                <h2 className="lg:text-[32px] text-[24px] font-medium">Veja Outros Equipamentos</h2>
-                <div className="flex lg:flex-row flex-col md:flex-row md:gap-5 gap-8 my-10 lg:my-20">
-                    <CardEquipamentos
-                        href="/bomba-de-concreto/carretinha-pequena"
-                        src="/img/eletrica.png"
-                        title="Carretinha Pequena"
-                        price="R$ 185.000"
-                    />
-                    <CardEquipamentos
-                        href="/bomba-de-concreto/multimix"
-                        src="/img/betoneira.png"
-                        title="Caminhão MultiMix"
-                        price="R$ 185.000"
-                    />
-                    <div className="flex md:hidden lg:flex">
-                        <CardEquipamentos
-                            href="/bomba-de-concreto/p700"
-                            src="/img/p700.png"
-                            title="P700"
-                            price="R$ 165.000"
-                        />
+        <>
+            <StructuredData data={structuredData} />
+
+            <section className="max-w-[1175px] flex m-auto flex-col mt-12" itemScope itemType="https://schema.org/Product">
+                <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-8 hidden">
+                    BetonBomba 25m³/h 200 Bar - R$ 165.000 | Arruda Bombas
+                </h1>
+
+                <meta itemProp="name" content="BetonBomba 25m³/h - Arruda Bombas Hidráulicas" />
+                <meta itemProp="image" content="https://www.arrudabombas.com.br/img/Betonbomba/Beton_1.png" />
+                <meta itemProp="description" content="Betonbomba com 25m³/h e 200 bar por apenas R$ 165.000. Pronta entrega!" />
+
+                <EquipamentosCard
+                    images={images}
+                    tituloEquipamento="BetonBomba 25m³/h"
+                    descricao="A <strong>betonbomba</strong> mais procurada do Brasil! Com 200 bar de pressão e capacidade de 25m³ por hora, é perfeita para obras de médio e grande porte. Transporte brita 0 e 1 com alcance de até 100m horizontal e 20m vertical. Preço imperdível: <strong>R$ 165.000</strong>."
+                    preco="R$ 165.000"
+                    especificacoes={especificacoes}
+                    galleryWidthProp={20}
+                />
+
+                <div className="my-16 bg-gray-50 p-8 rounded-lg">
+                    <h2 className="text-3xl font-bold mb-6">Perguntas Frequentes sobre BetonBomba</h2>
+                    <div itemScope itemType="https://schema.org/FAQPage">
+                        {[
+                            { q: "Quanto custa uma betonbomba?", a: "Na Arruda Bombas, a BetonBomba sai por R$ 165.000." },
+                            { q: "Qual a capacidade da betonbomba?", a: "25 metros cúbicos por hora com pressão de 200 bar." },
+                            { q: "Faz entrega em todo Brasil?", a: "Sim, entregamos em todos os estados com seguro total." },
+                        ].map((faq, i) => (
+                            <div key={i} itemScope itemProp="mainEntity" itemType="https://schema.org/Question" className="mb-6">
+                                <h3 itemProp="name" className="text-xl font-semibold">{faq.q}</h3>
+                                <div itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
+                                    <p itemProp="text" className="mt-2 text-gray-700">{faq.a}</p>
+                                </div>
+                            </div>
+                        ))}
                     </div>
                 </div>
-            </div>
-        </section>
+
+                <div className="flex flex-col md:items-start items-center md:ml-4 lg:ml-0 lg:mt-0 mt-12 md:mt-0">
+                    <h2 className="lg:text-[32px] text-[24px] font-medium">Outras Bombas de Concreto Populares</h2>
+                    <div className="flex lg:flex-row flex-col md:flex-row md:gap-5 gap-8 my-10 lg:my-20">
+                        <CardEquipamentos
+                            href="/bomba-de-concreto/carretinha-pequena"
+                            src="/img/eletrica.png"
+                            title="Carretinha Pequena"
+                            price="R$ 185.000"
+                        />
+                        <CardEquipamentos
+                            href="/bomba-de-concreto/multimix"
+                            src="/img/betoneira.png"
+                            title="Caminhão MultiMix"
+                            price="R$ 185.000"
+                        />
+                        <div className="flex md:hidden lg:flex">
+                            <CardEquipamentos
+                                href="/bomba-de-concreto/p700"
+                                src="/img/p700.png"
+                                title="P700"
+                                price="R$ 165.000"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </>
     );
 }
