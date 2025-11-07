@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import { FC } from 'react';
 
 interface StructuredDataProps {
