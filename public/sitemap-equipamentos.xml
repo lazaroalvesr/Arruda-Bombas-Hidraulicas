@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- BETONBOMBA -->
+  <url>
+    <loc>https://www.arrudabombas.com.br/bomba-de-concreto/betonbomba</loc>
+    <lastmod>2025-11-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.arrudabombas.com.br/img/Betonbomba/Beton_1.png</image:loc>
+      <image:title>BetonBomba 25m³/h 200 Bar - R$ 165.000</image:title>
+      <image:caption>BetonBomba mais vendida do Brasil</image:caption>
+    </image:image>
+  </url>
+
+  <!-- P700 -->
+  <url>
+    <loc>https://www.arrudabombas.com.br/bomba-de-concreto/p700</loc>
+    <lastmod>2025-11-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.arrudabombas.com.br/img/P700/P700_1.png</image:loc>
+      <image:title>P700 35m³/h 200 Bar - R$ 165.000</image:title>
+    </image:image>
+  </url>
+
+  <!-- CARRETINHA PEQUENA -->
+  <url>
+    <loc>https://www.arrudabombas.com.br/bomba-de-concreto/carretinha-pequena</loc>
+    <lastmod>2025-11-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.arrudabombas.com.br/img/Pequena/Pequena_1.png</image:loc>
+      <image:title>Carretinha Pequena 5m³/h - R$ 185.000</image:title>
+    </image:image>
+  </url>
+
+  <!-- MULTIMIX -->
+  <url>
+    <loc>https://www.arrudabombas.com.br/bomba-de-concreto/multimix</loc>
+    <lastmod>2025-11-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.arrudabombas.com.br/img/multimix/multimix_1.png</image:loc>
+      <image:title>Multimix 2 Betoneiras - R$ 185.000</image:title>
+    </image:image>
+  </url>
+
+  <!-- CARRETINHA REBOCÁVEL -->
+  <url>
+    <loc>https://www.arrudabombas.com.br/bomba-de-concreto/carretinha-rebocavel</loc>
+    <lastmod>2025-11-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.arrudabombas.com.br/img/Rebocavel/Rebocavel_1.png</image:loc>
+      <image:title>Carretinha Rebocável 25m³/h 100m alcance</image:title>
+    </image:image>
+  </url>
+
+</urlset>
