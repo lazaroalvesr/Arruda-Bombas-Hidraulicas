@@ -129,7 +129,7 @@ export default function CaminhaoBetonBomba() {
                 <EquipamentosCard
                     images={images}
                     tituloEquipamento="BetonBomba 25m³/h"
-                    descricao="A <strong>betonbomba</strong> mais procurada do Brasil! Com 200 bar de pressão e capacidade de 25m³ por hora, é perfeita para obras de médio e grande porte. Transporte brita 0 e 1 com alcance de até 100m horizontal e 20m vertical. Preço imperdível: <strong>R$ 165.000</strong>."
+                    descricao="A betonbomba mais procurada do Brasil! Com 200 bar de pressão e capacidade de 25m³ por hora, é perfeita para obras de médio e grande porte. Transporte brita 0 e 1 com alcance de até 100m horizontal e 20m vertical. Preço imperdível: <strong>R$ 165.000</strong>."
                     preco="R$ 165.000"
                     especificacoes={especificacoes}
                     galleryWidthProp={20}

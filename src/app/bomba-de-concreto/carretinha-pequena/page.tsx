@@ -123,7 +123,7 @@ export default function CarretinhaPequena() {
                 <EquipamentosCard
                     images={images}
                     tituloEquipamento="Carretinha Pequena 5m³/h"
-                    descricao="A <strong>carretinha pequena</strong> mais vendida do Brasil! Compacta, robusta e emplacada, ideal para obras residenciais, lajes, piscinas e reformas. Alcance de até 40 metros horizontal com a mesma pressão de 200 bar das máquinas grandes. Disponível com motor elétrico ou a diesel."
+                    descricao="A carretinha pequena mais vendida do Brasil! Compacta, robusta e emplacada, ideal para obras residenciais, lajes, piscinas e reformas. Alcance de até 40 metros horizontal com a mesma pressão de 200 bar das máquinas grandes. Disponível com motor elétrico ou a diesel."
                     preco="R$ 185.000"
                     motor={{
                         motor1: "Motor Elétrico",

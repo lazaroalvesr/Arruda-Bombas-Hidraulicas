@@ -112,7 +112,6 @@ export default function CarretinhaRebocavel() {
             <StructuredData data={structuredData} />
 
             <section className="max-w-[1175px] flex m-auto flex-col mt-12" itemScope itemType="https://schema.org/Product">
-                {/* H1 oculto para SEO */}
                 <h1 className="sr-only">
                     Carretinha Rebocável 25m³/h 200 Bar 100m Alcance | Arruda Bombas Hidráulicas
                 </h1>
@@ -124,7 +123,7 @@ export default function CarretinhaRebocavel() {
                 <EquipamentosCard
                     images={images}
                     tituloEquipamento="Carretinha Rebocável 25m³/h"
-                    descricao="A <strong>carretinha rebocável</strong> mais potente do Brasil! Com 200 bar de pressão, 25m³ por hora e alcance de até 100 metros horizontal, é ideal para grandes obras, fundações, pré-moldados e construções de alto padrão. Disponível com motor Perkins 4CC ou MWM 4CC."
+                    descricao="A carretinha rebocável mais potente do Brasil! Com 200 bar de pressão, 25m³ por hora e alcance de até 100 metros horizontal, é ideal para grandes obras, fundações, pré-moldados e construções de alto padrão. Disponível com motor Perkins 4CC ou MWM 4CC."
                     preco="Preço a consultar"
                     motor={{
                         motor1: "Perkins 4CC",

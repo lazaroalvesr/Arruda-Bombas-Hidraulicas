@@ -121,7 +121,7 @@ export default function BombaHidraulicaP700() {
                 <EquipamentosCard
                     images={images}
                     tituloEquipamento="Bomba de Concreto P700 35m³/h"
-                    descricao="A <strong>P700</strong> é a bomba de concreto mais vendida do Brasil! Com 35m³ por hora, 200 bar de pressão e alcance de até 80 metros horizontal, é perfeita para obras médias e grandes: edifícios, galpões, fundações e pré-moldados. Sistema tubo S, painel PP e automação total."
+                    descricao="A P700 é a bomba de concreto mais vendida do Brasil! Com 35m³ por hora, 200 bar de pressão e alcance de até 80 metros horizontal, é perfeita para obras médias e grandes: edifícios, galpões, fundações e pré-moldados. Sistema tubo S, painel PP e automação total."
                     preco="R$ 165.000"
                     especificacoes={especificacoes}
                     galleryWidthProp={103}
