@@ -289,7 +289,7 @@ export const ContatoPage = () => {
                         </motion.div>
                     </div >
                     <div className="fixed right-10 bottom-10">
-                        {/* <Link
+                        <Link
                             href={whatsappLink}
                             target="_blank"
                             rel="noopener noreferrer"
@@ -311,7 +311,7 @@ export const ContatoPage = () => {
                             <span className="absolute transform top-[67px] lg:w-[220px] lg:-left-36 -left-32 w-[200px] -translate-x-1/2 -translate-y-full bg-gray-800 text-white text-base p-2 rounded opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                                 Tem dúvidas? Vamos conversar!
                             </span>
-                        </Link> */}
+                        </Link>
                     </div>
                 </div>
             </div >
