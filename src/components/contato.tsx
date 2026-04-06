@@ -92,7 +92,7 @@ export const ContatoPage = () => {
     }
 
     const message = "Oi, tudo bem? Vim pelo site Arruda Bombas Hidráulicas, gostaria de solicitar um orçamento.";
-    const whatsappLink = `https://api.whatsapp.com/send?phone=55199887018098&text=${encodeURIComponent(message)}`;
+    const WhatsappLink = `https://api.whatsapp.com/send?phone=5519988701809&text=${encodeURIComponent(message)}`;
 
     return (
         <section className="bg-[#f8fafc]">
