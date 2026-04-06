@@ -121,7 +121,7 @@ export const ContatoPage = () => {
                                             <Phone className="w-5 h-5 text-blue-600" />
                                         </div>
                                         <Link
-                                            href={whatsappLink}
+                                            href={WhatsappLink}
                                             target="_blank"
                                             rel="noopener noreferrer">
                                             (19) 98870-1809</Link>
@@ -290,7 +290,7 @@ export const ContatoPage = () => {
                     </div >
                     <div className="fixed right-10 bottom-10">
                         <Link
-                            href={whatsappLink}
+                            href={WhatsappLink}
                             target="_blank"
                             rel="noopener noreferrer"
                             onClick={() => {
