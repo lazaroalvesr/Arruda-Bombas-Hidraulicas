@@ -4,9 +4,7 @@ import { PhoneIcon as WhatsappIcon, ArrowRight, PenToolIcon as Tool, CheckCircle
 import { motion } from "framer-motion"
 import Image from "next/image"
 import Link from "next/link"
-
-const message = "Oi, tudo bem? Vim pelo site Arruda Bombas Hidráulicas, gostaria de solicitar um orçamento.";
-const whatsappLink = `https://api.whatsapp.com/send?phone=5519974105318&text=${encodeURIComponent(message)}`;
+import { whatsappContact } from "@/lib/whatsappLink"
 
 export default function SecaoEquipamento() {
     const features = [
@@ -75,7 +73,7 @@ export default function SecaoEquipamento() {
 
                         <div className="flex flex-wrap gap-4">
                             <Link
-                                href={whatsappLink}
+                                href={whatsappContact()}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-blue-600 text-[#f7f7f7f7] hover:bg-blue-700 h-11 px-8">

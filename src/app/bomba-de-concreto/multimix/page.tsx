@@ -4,8 +4,8 @@ import { Metadata } from "next";
 import { StructuredData } from "@/components/StructuredData";
 
 export const metadata: Metadata = {
-    title: 'Multimix 2 Betoneiras 200 Bar | Arruda Bombas Hidráulicas',
-    description: 'Multimix com DUAS betoneiras, 200 bar e sistema automatizado. A bomba de concreto mais produtiva do Brasil. Caminhão betoneira + bomba em um só equipamento.',
+    title: 'Multimix 2 Betoneiras + Bomba 200 Bar | Arruda Bombas Hidráulicas',
+    description: 'Multimix com duas betoneiras + bomba de concreto em um único equipamento. 200 bar de pressão. Mistura e bombeia ao mesmo tempo. Alta produtividade.',
     keywords: [
         'multimix',
         'multimix arruda',
@@ -15,22 +15,17 @@ export const metadata: Metadata = {
         'multimix 2 betoneiras',
         'multimix caminhão',
         'multimix bomba de concreto',
+        'caminhão betoneira com bomba',
         'multimix 200 bar',
-        'caminhão multimix',
-        'multimix betoneira dupla',
-        'multimix hidráulica',
-        'multimix obras grandes',
-        // Gerais
         'bomba de concreto hidráulica',
         'venda de bombas de concreto',
-        'bombas de concreto para grandes volumes',
     ],
     alternates: {
         canonical: 'https://www.arrudabombas.com.br/bomba-de-concreto/multimix',
     },
     openGraph: {
         title: 'Multimix 2 Betoneiras 200 Bar | Arruda Bombas',
-        description: 'O único caminhão com betoneira + bomba de concreto. 200 bar • Sistema automatizado • Máxima produtividade',
+        description: 'Caminhão com 2 betoneiras + bomba de concreto • 200 bar • Alta produtividade',
         url: 'https://www.arrudabombas.com.br/bomba-de-concreto/multimix',
         type: 'website',
         images: [
@@ -38,14 +33,14 @@ export const metadata: Metadata = {
                 url: 'https://www.arrudabombas.com.br/img/multimix/multimix_1.png',
                 width: 1200,
                 height: 900,
-                alt: 'Multimix Arruda - Caminhão com 2 Betoneiras',
+                alt: 'Multimix Arruda Bombas',
             },
         ],
     },
     twitter: {
         card: 'summary_large_image',
         title: 'Multimix 2 Betoneiras | Arruda Bombas',
-        description: '200 bar • Automatizado • Sob consulta',
+        description: 'Mistura + Bombeia • 200 bar • Sob consulta',
         images: ['https://www.arrudabombas.com.br/img/multimix/multimix_1.png'],
     },
     robots: 'index, follow, max-image-preview:large',
@@ -59,7 +54,7 @@ const structuredData = {
         "https://www.arrudabombas.com.br/img/multimix/multimix_1.png",
         "https://www.arrudabombas.com.br/img/multimix/multimix_2.png"
     ],
-    "description": "Multimix com duas betoneiras normais, 200 bar de pressão e sistema automatizado. Ideal para grandes obras com altíssima produtividade.",
+    "description": "Multimix com duas betoneiras e bomba de concreto integrada. 200 bar de pressão. Ideal para grandes obras com alta produtividade.",
     "brand": {
         "@type": "Brand",
         "name": "Arruda Bombas Hidráulicas"
@@ -68,7 +63,7 @@ const structuredData = {
         "@type": "Offer",
         "url": "https://www.arrudabombas.com.br/bomba-de-concreto/multimix",
         "priceCurrency": "BRL",
-        "price": "185000.00",
+        "price": "0",
         "priceSpecification": {
             "@type": "PriceSpecification",
             "price": "Sob consulta",
@@ -89,56 +84,53 @@ const structuredData = {
 
 export default function Multimix() {
     const images = [
-        { id: 1, images: "/img/Betoneira/Betoneira_1.png", alt: "Multimix Arruda - Vista lateral com 2 betoneiras" },
-        { id: 2, images: "/img/Betoneira/Betoneira_2.png", alt: "Multimix em operação na obra" },
-        { id: 3, images: "/img/Betoneira/Betoneira_3.png", alt: "Detalhe do sistema de bombeamento automatizado" },
-        { id: 4, images: "/img/Betoneira/Betoneira_4.png", alt: "Painel de controle digital Multimix" },
-        { id: 5, images: "/img/Betoneira/Betoneira_5.png", alt: "Duas betoneiras trabalhando simultaneamente" },
-        { id: 6, images: "/img/Betoneira/Betoneira_6.png", alt: "Multimix despejando concreto em laje" },
+        { id: 1, images: "/img/multimix/multimix_1.png", alt: "Multimix Arruda - Vista lateral com 2 betoneiras" },
+        { id: 2, images: "/img/multimix/multimix_2.png", alt: "Multimix em operação na obra" },
+        { id: 3, images: "/img/multimix/multimix_3.png", alt: "Detalhe do sistema de bombeamento automatizado" },
+        { id: 4, images: "/img/multimix/multimix_4.png", alt: "Painel de controle digital Multimix" },
+        { id: 5, images: "/img/multimix/multimix_5.png", alt: "Duas betoneiras trabalhando simultaneamente" },
     ];
 
     const especificacoes = [
-        { tituloEspecificacoes: "Duas Betoneiras", textEspecificacoes: "Equipado com duas betoneiras normais para produção contínua." },
-        { tituloEspecificacoes: "Pressão Máxima", textEspecificacoes: "200 bar de pressão para bombeamento de longa distância." },
-        { tituloEspecificacoes: "Sistema Automatizado", textEspecificacoes: "Controle total por painel digital com operação simplificada." },
-        { tituloEspecificacoes: "Alta Produtividade", textEspecificacoes: "Combina mistura + bombeamento em um só equipamento." },
-        { tituloEspecificacoes: "Ideal para Grandes Obras", textEspecificacoes: "Perfeito para edifícios, pontes, barragens e pré-moldados." },
-        { tituloEspecificacoes: "Confiabilidade", textEspecificacoes: "Projeto robusto com componentes de primeira linha." },
+        { tituloEspecificacoes: "Duas Betoneiras", textEspecificacoes: "Produção contínua com duas betoneiras trabalhando simultaneamente" },
+        { tituloEspecificacoes: "Pressão Máxima", textEspecificacoes: "200 bar de pressão" },
+        { tituloEspecificacoes: "Sistema Automatizado", textEspecificacoes: "Painel digital para controle de mistura e bombeamento" },
+        { tituloEspecificacoes: "Alta Produtividade", textEspecificacoes: "Mistura + bombeia concreto em um único equipamento" },
+        { tituloEspecificacoes: "Aplicação", textEspecificacoes: "Edifícios, galpões, pontes, barragens e grandes obras" },
     ];
 
     return (
         <>
             <StructuredData data={structuredData} />
 
-            <section className="max-w-[1175px] flex m-auto flex-col mt-12" itemScope itemType="https://schema.org/Product">
+            <section className="max-w-[1175px] flex m-auto flex-col lg:mt-12 mt-32" itemScope itemType="https://schema.org/Product">
                 <h1 className="sr-only">
-                    Multimix 2 Betoneiras 200 Bar - Caminhão Betoneira + Bomba | Arruda Bombas
+                    Multimix 2 Betoneiras + Bomba de Concreto 200 Bar | Arruda Bombas
                 </h1>
 
                 <meta itemProp="name" content="Multimix 2 Betoneiras - Arruda Bombas" />
                 <meta itemProp="image" content="https://www.arrudabombas.com.br/img/multimix/multimix_1.png" />
-                <meta itemProp="description" content="Multimix com duas betoneiras e 200 bar. O único caminhão que mistura e bombeia ao mesmo tempo." />
+                <meta itemProp="description" content="Multimix com duas betoneiras e bomba integrada. Mistura e bombeia ao mesmo tempo." />
 
                 <EquipamentosCard
                     images={images}
                     tituloEquipamento="Multimix 2 Betoneiras"
-                    descricao="A Bomba de concreto Multimix é a solução ideal para operações de bombeamento que exigem alta performance. Equipado com duas betoneiras normais, ele combina robustez e eficiência, garantindo resultados consistentes em projetos de grande escala. Com 200 bar de pressão e um sistema automatizado, o Multimix maximiza a produtividade, sendo perfeito para quem busca potência sem abrir mão da confiabilidade."
-                    preco="R$ 185.000"
+                    descricao="O Multimix é um equipamento único que combina duas betoneiras + bomba de concreto em um só caminhão. Mistura e bombeia ao mesmo tempo, oferecendo altíssima produtividade para grandes obras. Com 200 bar de pressão e sistema automatizado."
+                    preco="Sob consulta"
                     especificacoes={especificacoes}
                     galleryWidthProp={30}
                 />
 
-                {/* FAQ Schema – domina o "People Also Ask" */}
                 <div className="my-16 bg-gray-50 p-8 rounded-lg">
                     <h2 className="text-3xl font-bold mb-6">Perguntas Frequentes sobre Multimix</h2>
                     <div itemScope itemType="https://schema.org/FAQPage">
                         {[
-                            { q: "O que é o Multimix?", a: "É um caminhão que tem betoneira + bomba de concreto no mesmo equipamento. Mistura e bombeia ao mesmo tempo." },
-                            { q: "Quantas betoneiras tem?", a: "Duas betoneiras normais trabalhando simultaneamente." },
-                            { q: "Qual a pressão da bomba?", a: "200 bar – mesma das bombas estacionárias topo de linha." },
-                            { q: "Precisa de dois operadores?", a: "Não! Um único operador controla mistura e bombeamento pelo painel digital." },
-                            { q: "Qual o preço do Multimix?", a: "R$ 185.000" },
-                            { q: "Faz concreto com brita 1?", a: "Sim, aceita brita 0 e 1 sem problemas." },
+                            { q: "O que é o Multimix?", a: "É um caminhão que possui duas betoneiras + bomba de concreto em um único equipamento. Mistura e bombeia ao mesmo tempo." },
+                            { q: "Quantas betoneiras tem?", a: "Duas betoneiras trabalhando simultaneamente." },
+                            { q: "Qual a pressão da bomba?", a: "200 bar de pressão." },
+                            { q: "Precisa de dois operadores?", a: "Não. Um único operador controla tudo pelo painel digital." },
+                            { q: "Qual o preço do Multimix?", a: "Valor sob consulta. Entre em contato para orçamento." },
+                            { q: "Funciona com brita 0 e 1?", a: "Sim, bombeia concreto com brita 0 e 1 sem problemas." },
                         ].map((faq, i) => (
                             <div key={i} itemScope itemProp="mainEntity" itemType="https://schema.org/Question" className="mb-6">
                                 <h3 itemProp="name" className="text-xl font-semibold">{faq.q}</h3>
@@ -157,7 +149,7 @@ export default function Multimix() {
                             href="/bomba-de-concreto/betonbomba"
                             src="/img/betonbomba.png"
                             title="Betonbomba"
-                            price="R$ 165.000"
+                            price="Sob consulta"
                         />
                         <CardEquipamentos
                             href="/bomba-de-concreto/carretinha-rebocavel"

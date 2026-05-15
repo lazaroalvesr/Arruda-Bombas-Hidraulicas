@@ -4,8 +4,8 @@ import { Metadata } from "next";
 import { StructuredData } from "@/components/StructuredData";
 
 export const metadata: Metadata = {
-    title: 'Carretinha Pequena 5m³/h 200 Bar | Arruda Bombas Hidráulicas',
-    description: 'Carretinha Pequena com 5m³/h e 200 bar – ideal para obras pequenas e médias. Compacta, emplacada e pronta para uso. Preço: R$ 185.000. Arruda Bombas Hidráulicas.',
+    title: 'Carretinha Pequena 5m³/h 200 Bar - R$ 185.000 | Arruda Bombas',
+    description: 'Carretinha Pequena 5m³/h com 200 bar – Compacta, emplacada e robusta. Ideal para obras residenciais, lajes e piscinas. Preço: R$ 185.000. Arruda Bombas Hidráulicas.',
     keywords: [
         'carretinha pequena',
         'carretinha bomba de concreto',
@@ -20,18 +20,15 @@ export const metadata: Metadata = {
         'bomba de concreto pequena',
         'carretinha emplacada concreto',
         'mini bomba de concreto',
-        'bomba concreto rebocável pequena',
         'bomba de concreto hidráulica',
         'venda de bombas de concreto',
-        'bombas de concreto para construção',
-        'bombas de concreto para obras',
     ],
     alternates: {
         canonical: 'https://www.arrudabombas.com.br/bomba-de-concreto/carretinha-pequena',
     },
     openGraph: {
         title: 'Carretinha Pequena 5m³/h - R$ 185.000 | Arruda Bombas',
-        description: 'A carretinha pequena mais robusta do mercado. 200 bar • 40m horizontal • Elétrica ou Diesel • R$ 185.000',
+        description: 'A carretinha pequena mais vendida do Brasil • 200 bar • 5m³/h • Elétrica ou Diesel • Emplacada',
         url: 'https://www.arrudabombas.com.br/bomba-de-concreto/carretinha-pequena',
         type: 'website',
         images: [
@@ -39,14 +36,14 @@ export const metadata: Metadata = {
                 url: 'https://www.arrudabombas.com.br/img/Pequena/Pequena_1.png',
                 width: 1200,
                 height: 900,
-                alt: 'Carretinha Pequena Arruda - Vista Lateral',
+                alt: 'Carretinha Pequena Arruda Bombas',
             },
         ],
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'Carretinha Pequena R$ 185.000 | Arruda',
-        description: '5m³/h • 200 bar • Emplacada • Pronta Entrega',
+        title: 'Carretinha Pequena R$ 185.000 | Arruda Bombas',
+        description: '5m³/h • 200 bar • Emplacada • Motor Elétrico ou Diesel',
         images: ['https://www.arrudabombas.com.br/img/Pequena/Pequena_1.png'],
     },
     robots: 'index, follow, max-image-preview:large',
@@ -60,7 +57,7 @@ const structuredData = {
         "https://www.arrudabombas.com.br/img/Pequena/Pequena_1.png",
         "https://www.arrudabombas.com.br/img/Pequena/Pequena_2.png"
     ],
-    "description": "Carretinha pequena para bombeamento de concreto com 5m³/h, 200 bar, motor elétrico ou diesel. Ideal para obras residenciais e comerciais de pequeno porte.",
+    "description": "Carretinha pequena para bombeamento de concreto com 5m³/h, 200 bar, motor elétrico ou diesel. Ideal para obras residenciais.",
     "brand": {
         "@type": "Brand",
         "name": "Arruda Bombas Hidráulicas"
@@ -100,9 +97,8 @@ export default function CarretinhaPequena() {
         { tituloEspecificacoes: "Alcance Horizontal", textEspecificacoes: "Até 40 metros" },
         { tituloEspecificacoes: "Alcance Vertical", textEspecificacoes: "Até 6 metros" },
         { tituloEspecificacoes: "Motores Disponíveis", textEspecificacoes: "Elétrico trifásico 220/380V ou Diesel" },
-        { tituloEspecificacoes: "Cilindro", textEspecificacoes: "Camisa 150 mm × 0,60 m | Pistão 0,60 m" },
-        { tituloEspecificacoes: "Sistema Hidráulico", textEspecificacoes: "Coxo com sistema Tubo S + Painel PP + Radiador de óleo" },
         { tituloEspecificacoes: "Chassis", textEspecificacoes: "Carretinha emplacada com documentação em dia" },
+        { tituloEspecificacoes: "Sistema Hidráulico", textEspecificacoes: "Coxo com sistema Tubo S + Painel PP + Radiador de óleo" },
         { tituloEspecificacoes: "Aplicação Ideal", textEspecificacoes: "Lajes, piscinas, calçadas, reformas e obras residenciais" },
     ];
 
@@ -110,8 +106,7 @@ export default function CarretinhaPequena() {
         <>
             <StructuredData data={structuredData} />
 
-            <section className="max-w-[1175px] flex m-auto flex-col mt-12" itemScope itemType="https://schema.org/Product">
-                {/* H1 oculto para SEO (Google ama) */}
+            <section className="max-w-[1175px] flex m-auto flex-col lg:mt-12 mt-32" itemScope itemType="https://schema.org/Product">
                 <h1 className="sr-only">
                     Carretinha Pequena 5m³/h 200 Bar - R$ 185.000 | Arruda Bombas Hidráulicas
                 </h1>
@@ -123,7 +118,7 @@ export default function CarretinhaPequena() {
                 <EquipamentosCard
                     images={images}
                     tituloEquipamento="Carretinha Pequena 5m³/h"
-                    descricao="A carretinha pequena mais vendida do Brasil! Compacta, robusta e emplacada, ideal para obras residenciais, lajes, piscinas e reformas. Alcance de até 40 metros horizontal com a mesma pressão de 200 bar das máquinas grandes. Disponível com motor elétrico ou a diesel."
+                    descricao="A carretinha pequena mais vendida do Brasil! Compacta, robusta e emplacada, ideal para obras residenciais, lajes, piscinas e reformas. Alcance de até 40 metros horizontal com 200 bar de pressão. Disponível com motor elétrico ou a diesel."
                     preco="R$ 185.000"
                     motor={{
                         motor1: "Motor Elétrico",
@@ -139,8 +134,9 @@ export default function CarretinhaPequena() {
                         {[
                             { q: "Qual o preço da carretinha pequena?", a: "R$ 185.000." },
                             { q: "Qual a capacidade da carretinha pequena?", a: "5 metros cúbicos por hora com pressão de 200 bar." },
-                            { q: "Funciona com brita 0 e 1?", a: "Sim, bombeia concreto usinado com brita 0 e 1 sem problemas." },
+                            { q: "Funciona com brita 0 e 1?", a: "Sim, bombeia concreto com brita 0 e 1 sem problemas." },
                             { q: "Posso usar em obra sem energia elétrica?", a: "Sim! Temos a versão com motor a diesel." },
+                            { q: "A carretinha é emplacada?", a: "Sim, sai pronta para rodar na estrada." },
                         ].map((faq, i) => (
                             <div key={i} itemScope itemProp="mainEntity" itemType="https://schema.org/Question" className="mb-6">
                                 <h3 itemProp="name" className="text-xl font-semibold">{faq.q}</h3>
@@ -165,7 +161,7 @@ export default function CarretinhaPequena() {
                             href="/bomba-de-concreto/betonbomba"
                             src="/img/betonbomba.png"
                             title="Betonbomba"
-                            price="R$ 165.000"
+                            price="Sob consulta"
                         />
                         <div className="flex md:hidden lg:flex">
                             <CardEquipamentos

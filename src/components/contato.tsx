@@ -13,6 +13,7 @@ import { FiYoutube } from "react-icons/fi";
 import { FiFacebook } from "react-icons/fi";
 import { FaInstagram } from "react-icons/fa";
 import { formatTelephone } from '@/lib/formattedPhone';
+import { whatsappContact } from "@/lib/whatsappLink"
 
 const equipamentos = [
     { name: "Carretinha Pequena", motores: ['Motor Elétrico', 'Motor a Diesel'] },
@@ -91,9 +92,6 @@ export const ContatoPage = () => {
         },
     }
 
-    const message = "Oi, tudo bem? Vim pelo site Arruda Bombas Hidráulicas, gostaria de solicitar um orçamento.";
-    const WhatsappLink = `https://api.whatsapp.com/send?phone=5519988701809&text=${encodeURIComponent(message)}`;
-
     return (
         <section className="bg-[#f8fafc]">
             <div className="lg:max-w-[1175px] items-center justify-center flex m-auto lg:py-[60px] py-[80px] relative" id="contato">
@@ -121,10 +119,11 @@ export const ContatoPage = () => {
                                             <Phone className="w-5 h-5 text-blue-600" />
                                         </div>
                                         <Link
-                                            href={WhatsappLink}
+                                            href={whatsappContact()}
                                             target="_blank"
                                             rel="noopener noreferrer">
-                                            (19) 98870-1809</Link>
+                                            (19) 99313-6999
+                                        </Link>
                                     </div>
                                     <motion.a
                                         whileHover={{ scale: 1.02 }}
@@ -290,7 +289,7 @@ export const ContatoPage = () => {
                     </div >
                     <div className="fixed right-10 bottom-10">
                         <Link
-                            href={WhatsappLink}
+                            href={whatsappContact()}
                             target="_blank"
                             rel="noopener noreferrer"
                             onClick={() => {
@@ -314,7 +313,7 @@ export const ContatoPage = () => {
                         </Link>
                     </div>
                 </div>
-            </div >
-        </section >
+            </div>
+        </section>
     )
 }

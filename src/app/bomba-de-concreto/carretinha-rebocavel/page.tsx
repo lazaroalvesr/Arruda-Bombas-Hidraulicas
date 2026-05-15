@@ -5,7 +5,7 @@ import { StructuredData } from "@/components/StructuredData";
 
 export const metadata: Metadata = {
     title: 'Carretinha Rebocável 25m³/h 200 Bar | Arruda Bombas Hidráulicas',
-    description: 'Carretinha Rebocável com 25m³/h, 200 bar e alcance de 100m horizontal. Motor Perkins ou MWM. A mais potente do mercado. Arruda Bombas Hidráulicas.',
+    description: 'Carretinha Rebocável 25m³/h com 200 bar e alcance de até 100 metros. Motor Perkins ou MWM. Ideal para grandes obras. Arruda Bombas Hidráulicas.',
     keywords: [
         'carretinha rebocável',
         'carretinha rebocável bomba de concreto',
@@ -15,22 +15,18 @@ export const metadata: Metadata = {
         'carretinha rebocável preço',
         'carretinha rebocável perkins',
         'carretinha rebocável mwm',
-        'carretinha rebocável hidráulica',
         'bomba concreto rebocável 25m³',
         'carretinha rebocável 100 metros',
         'carretinha rebocável tubo s',
-        // Keywords gerais
         'bomba de concreto hidráulica',
         'venda de bombas de concreto',
-        'bombas de concreto para construção',
-        'bombas de concreto para grandes volumes',
     ],
     alternates: {
         canonical: 'https://www.arrudabombas.com.br/bomba-de-concreto/carretinha-rebocavel',
     },
     openGraph: {
         title: 'Carretinha Rebocável 25m³/h 200 Bar | Arruda Bombas',
-        description: 'A carretinha rebocável mais potente: 25m³/h • 100m horizontal • 200 bar • Perkins ou MWM',
+        description: 'Carretinha rebocável potente: 25m³/h • 200 bar • 100m de alcance • Perkins ou MWM',
         url: 'https://www.arrudabombas.com.br/bomba-de-concreto/carretinha-rebocavel',
         type: 'website',
         images: [
@@ -38,14 +34,14 @@ export const metadata: Metadata = {
                 url: 'https://www.arrudabombas.com.br/img/Rebocavel/Rebocavel_1.png',
                 width: 1200,
                 height: 900,
-                alt: 'Carretinha Rebocável Arruda - Vista Completa',
+                alt: 'Carretinha Rebocável Arruda Bombas',
             },
         ],
     },
     twitter: {
         card: 'summary_large_image',
         title: 'Carretinha Rebocável 25m³/h | Arruda Bombas',
-        description: '200 bar • 100m alcance • Perkins/MWM • Sob consulta',
+        description: '200 bar • 100m alcance • Motor Perkins ou MWM',
         images: ['https://www.arrudabombas.com.br/img/Rebocavel/Rebocavel_1.png'],
     },
     robots: 'index, follow, max-image-preview:large',
@@ -59,7 +55,7 @@ const structuredData = {
         "https://www.arrudabombas.com.br/img/Rebocavel/Rebocavel_1.png",
         "https://www.arrudabombas.com.br/img/Rebocavel/Rebocavel_2.png"
     ],
-    "description": "Carretinha rebocável com 25m³/h, 200 bar, alcance de 100m horizontal e 20m vertical. Motor Perkins 4CC ou MWM 4CC. Ideal para grandes obras.",
+    "description": "Carretinha rebocável com 25m³/h, 200 bar e alcance de até 100 metros horizontal. Motor Perkins ou MWM. Ideal para grandes obras.",
     "brand": {
         "@type": "Brand",
         "name": "Arruda Bombas Hidráulicas"
@@ -68,7 +64,7 @@ const structuredData = {
         "@type": "Offer",
         "url": "https://www.arrudabombas.com.br/bomba-de-concreto/carretinha-rebocavel",
         "priceCurrency": "BRL",
-        "price": "0", 
+        "price": "0",
         "priceSpecification": {
             "@type": "PriceSpecification",
             "price": "Sob consulta",
@@ -98,32 +94,31 @@ export default function CarretinhaRebocavel() {
     ];
 
     const especificacoes = [
-        { tituloEspecificacoes: "Alta Pressão", textEspecificacoes: "Com 200 bar de pressão, esta carretinha garante uma operação poderosa e eficiente, ideal para bombeamento de materiais como brita 0 e 1." },
-        { tituloEspecificacoes: "Especificações do Cilindro", textEspecificacoes: "Equipado com uma camisa de 180 mm de diâmetro e um pistão com 0,75 metros de comprimento, assegurando força e precisão em cada bombeamento." },
-        { tituloEspecificacoes: "Alcance Impressionante", textEspecificacoes: "Capaz de realizar bombeamento horizontal de até 100 metros e vertical de até 20 metros, proporcionando flexibilidade em diferentes cenários de trabalho." },
-        { tituloEspecificacoes: "Capacidade de Bombeamento", textEspecificacoes: "Com uma capacidade de 25 M³ por hora, esta carretinha é perfeita para operações de alta demanda." },
-        { tituloEspecificacoes: "Sistema Avançado", textEspecificacoes: "Inclui um coxo com sistema tubo S, painel PP de fácil operação e um radiador de óleo para manter a máquina funcionando nas melhores condições." },
-        { tituloEspecificacoes: "Eficiência e Potência", textEspecificacoes: "Com uma potência equivalente ao modelo P500, esta carretinha é sinônimo de confiabilidade e desempenho." },
-        { tituloEspecificacoes: "Automatização", textEspecificacoes: "O sistema de bombeamento automatizado garante operações contínuas e sem interrupções, permitindo que você se concentre no que realmente importa." },
+        { tituloEspecificacoes: "Alta Pressão", textEspecificacoes: "200 bar de pressão, excelente para bombeamento de concreto com brita 0 e 1." },
+        { tituloEspecificacoes: "Capacidade de Bombeamento", textEspecificacoes: "25 m³ por hora – Alta produtividade." },
+        { tituloEspecificacoes: "Alcance Impressionante", textEspecificacoes: "Até 100 metros horizontal e 20 metros vertical." },
+        { tituloEspecificacoes: "Motor", textEspecificacoes: "Perkins 4CC ou MWM 4CC (diesel)." },
+        { tituloEspecificacoes: "Sistema Avançado", textEspecificacoes: "Coxo com tubo S, painel PP e radiador de óleo." },
+        { tituloEspecificacoes: "Mobilidade", textEspecificacoes: "Rebocável e emplacada – Fácil transporte entre obras." },
     ];
 
     return (
         <>
             <StructuredData data={structuredData} />
 
-            <section className="max-w-[1175px] flex m-auto flex-col mt-12" itemScope itemType="https://schema.org/Product">
+            <section className="max-w-[1175px] flex m-auto flex-col lg:mt-12 mt-32" itemScope itemType="https://schema.org/Product">
                 <h1 className="sr-only">
-                    Carretinha Rebocável 25m³/h 200 Bar 100m Alcance | Arruda Bombas Hidráulicas
+                    Carretinha Rebocável 25m³/h 200 Bar - Arruda Bombas Hidráulicas
                 </h1>
 
                 <meta itemProp="name" content="Carretinha Rebocável 25m³/h - Arruda Bombas" />
                 <meta itemProp="image" content="https://www.arrudabombas.com.br/img/Rebocavel/Rebocavel_1.png" />
-                <meta itemProp="description" content="Carretinha rebocável com 25m³/h, 200 bar e 100m de alcance. Motor Perkins ou MWM." />
+                <meta itemProp="description" content="Carretinha rebocável 25m³/h com 200 bar e alcance de até 100 metros." />
 
                 <EquipamentosCard
                     images={images}
                     tituloEquipamento="Carretinha Rebocável 25m³/h"
-                    descricao="A carretinha rebocável mais potente do Brasil! Com 200 bar de pressão, 25m³ por hora e alcance de até 100 metros horizontal, é ideal para grandes obras, fundações, pré-moldados e construções de alto padrão. Disponível com motor Perkins 4CC ou MWM 4CC."
+                    descricao="A carretinha rebocável mais potente da Arruda Bombas! Entrega 25m³/h com 200 bar de pressão e alcance de até 100 metros horizontal. Perfeita para grandes obras, fundações, pré-moldados e construções de alto padrão. Disponível com motor Perkins 4CC ou MWM 4CC."
                     preco="Preço a consultar"
                     motor={{
                         motor1: "Perkins 4CC",
@@ -141,7 +136,8 @@ export default function CarretinhaRebocavel() {
                             { q: "Qual a capacidade da carretinha rebocável?", a: "25 metros cúbicos por hora com pressão de 200 bar." },
                             { q: "Qual o alcance máximo?", a: "Até 100 metros horizontal e 20 metros vertical." },
                             { q: "Quais motores estão disponíveis?", a: "Perkins 4 cilindros ou MWM 4 cilindros, ambos diesel." },
-                            { q: "Funciona com brita 0 e 1?", a: "Sim, bombeia concreto usinado com brita 0 e 1 sem problemas." },
+                            { q: "Funciona com brita 0 e 1?", a: "Sim, bombeia concreto com brita 0 e 1 sem problemas." },
+                            { q: "A carretinha é emplacada?", a: "Sim, sai pronta para rodar na estrada." },
                         ].map((faq, i) => (
                             <div key={i} itemScope itemProp="mainEntity" itemType="https://schema.org/Question" className="mb-6">
                                 <h3 itemProp="name" className="text-xl font-semibold">{faq.q}</h3>
@@ -166,7 +162,7 @@ export default function CarretinhaRebocavel() {
                             href="/bomba-de-concreto/betonbomba"
                             src="/img/betonbomba.png"
                             title="Betonbomba"
-                            price="R$ 165.000"
+                            price="Sob consulta"
                         />
                         <div className="flex md:hidden lg:flex">
                             <CardEquipamentos

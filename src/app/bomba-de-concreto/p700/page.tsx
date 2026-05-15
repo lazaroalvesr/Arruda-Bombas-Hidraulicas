@@ -5,7 +5,7 @@ import { StructuredData } from "@/components/StructuredData";
 
 export const metadata: Metadata = {
     title: 'P700 35m³/h 200 Bar - R$ 165.000 | Arruda Bombas Hidráulicas',
-    description: 'Bomba de Concreto P700 com 35m³/h, 200 bar e alcance de 80m horizontal. A mais vendida do Brasil. Preço especial: R$ 165.000. Arruda Bombas Hidráulicas.',
+    description: 'Bomba de Concreto P700 35m³/h com 200 bar e alcance de até 80 metros. A mais vendida do Brasil por R$ 165.000. Arruda Bombas.',
     keywords: [
         'p700',
         'bomba p700',
@@ -17,13 +17,10 @@ export const metadata: Metadata = {
         'p700 hidráulica',
         'p700 80 metros',
         'p700 tubo s',
-        'p700 concreto usinado',
-        'p700 brita 0 e 1',
         'bomba estacionária p700',
-        // Gerais
+        'p700 brita 0 e 1',
         'bomba de concreto hidráulica',
         'venda de bombas de concreto',
-        'bombas de concreto para construção',
         'bombas de concreto para grandes volumes',
     ],
     alternates: {
@@ -31,7 +28,7 @@ export const metadata: Metadata = {
     },
     openGraph: {
         title: 'P700 35m³/h 200 Bar - R$ 165.000 | Arruda Bombas',
-        description: 'A bomba de concreto mais potente da categoria: 35m³/h • 80m horizontal • 200 bar • R$ 165.000',
+        description: 'A bomba estacionária mais vendida: 35m³/h • 200 bar • 80m de alcance • R$ 165.000',
         url: 'https://www.arrudabombas.com.br/bomba-de-concreto/p700',
         type: 'website',
         images: [
@@ -39,7 +36,7 @@ export const metadata: Metadata = {
                 url: 'https://www.arrudabombas.com.br/img/P700/P700_1.png',
                 width: 1200,
                 height: 900,
-                alt: 'Bomba P700 Arruda - Vista Frontal',
+                alt: 'Bomba P700 Arruda Bombas',
             },
         ],
     },
@@ -60,7 +57,7 @@ const structuredData = {
         "https://www.arrudabombas.com.br/img/P700/P700_1.png",
         "https://www.arrudabombas.com.br/img/P700/P700_2.png"
     ],
-    "description": "P700 com 35m³/h, 200 bar, 80m horizontal e 12m vertical. Ideal para obras médias e grandes. Preço: R$ 165.000.",
+    "description": "P700 com 35m³/h, 200 bar e alcance de até 80 metros horizontal. Ideal para obras médias e grandes.",
     "brand": {
         "@type": "Brand",
         "name": "Arruda Bombas Hidráulicas"
@@ -92,36 +89,35 @@ export default function BombaHidraulicaP700() {
         { id: 4, images: "/img/P700/P700_4.png", alt: "Painel PP digital da P700" },
         { id: 5, images: "/img/P700/P700_5.png", alt: "Radiador de óleo e cilindro 180mm" },
         { id: 6, images: "/img/P700/P700_6.png", alt: "P700 bombeando a 80 metros horizontal" },
-        { id: 7, images: "/img/P700/P700_7.jpg", alt: "P700 em obra de edifício" },
     ];
 
     const especificacoes = [
-        { tituloEspecificacoes: "Alta Pressão", textEspecificacoes: "Com 200 bar de pressão, a P700 garante uma operação poderosa e eficiente, ideal para o bombeamento de concreto usinado e materiais como brita 0 e 1." },
-        { tituloEspecificacoes: "Especificações do Cilindro", textEspecificacoes: "Equipado com uma camisa de 180 mm de diâmetro e um pistão com 1.20 metros de comprimento, assegurando força e precisão em cada bombeamento." },
-        { tituloEspecificacoes: "Alcance Impressionante", textEspecificacoes: "Capaz de realizar bombeamento horizontal de até 80 metros e vertical de até 12 metros, proporcionando flexibilidade em diferentes cenários de trabalho." },
-        { tituloEspecificacoes: "Capacidade de Bombeamento", textEspecificacoes: "Com uma capacidade de 35 m³ por hora, esta bomba é perfeita para operações de alta demanda." },
-        { tituloEspecificacoes: "Sistema Avançado", textEspecificacoes: "Inclui um coxo com sistema tubo S, painel PP de fácil operação e um radiador de óleo para manter a máquina funcionando nas melhores condições." },
-        { tituloEspecificacoes: "Eficiência e Potência", textEspecificacoes: "Com uma potência equivalente ao modelo P500, a P700 é sinônimo de confiabilidade e desempenho." },
-        { tituloEspecificacoes: "Automatização", textEspecificacoes: "O sistema de bombeamento automatizado garante operações contínuas e sem interrupções, permitindo que você se concentre no que realmente importa." },
+        { tituloEspecificacoes: "Alta Pressão", textEspecificacoes: "200 bar de pressão, ideal para bombeamento de concreto com brita 0 e 1." },
+        { tituloEspecificacoes: "Capacidade", textEspecificacoes: "35 m³ por hora – alta produtividade" },
+        { tituloEspecificacoes: "Alcance", textEspecificacoes: "Até 80 metros horizontal e 12 metros vertical" },
+        { tituloEspecificacoes: "Cilindro", textEspecificacoes: "Camisa 180 mm × pistão de 1,20 m" },
+        { tituloEspecificacoes: "Sistema", textEspecificacoes: "Coxo com Tubo S + Painel PP + Radiador de óleo" },
+        { tituloEspecificacoes: "Motor", textEspecificacoes: "Diesel embutido (equivalente ao P500)" },
+        { tituloEspecificacoes: "Aplicação Ideal", textEspecificacoes: "Edifícios, galpões, fundações e obras médias/grandes" },
     ];
 
     return (
         <>
             <StructuredData data={structuredData} />
 
-            <section className="max-w-[1175px] flex m-auto flex-col mt-12" itemScope itemType="https://schema.org/Product">
+            <section className="max-w-[1175px] flex m-auto flex-col lg:mt-12 mt-32" itemScope itemType="https://schema.org/Product">
                 <h1 className="sr-only">
-                    Bomba de Concreto P700 35m³/h 200 Bar - R$ 165.000 | Arruda Bombas Hidráulicas
+                    Bomba de Concreto P700 35m³/h 200 Bar - R$ 165.000 | Arruda Bombas
                 </h1>
 
                 <meta itemProp="name" content="Bomba de Concreto P700 35m³/h - Arruda Bombas" />
                 <meta itemProp="image" content="https://www.arrudabombas.com.br/img/P700/P700_1.png" />
-                <meta itemProp="description" content="P700 com 35m³/h, 200 bar e 80m de alcance por apenas R$ 165.000. A mais vendida do Brasil!" />
+                <meta itemProp="description" content="P700 com 35m³/h, 200 bar e 80m de alcance por apenas R$ 165.000." />
 
                 <EquipamentosCard
                     images={images}
                     tituloEquipamento="Bomba de Concreto P700 35m³/h"
-                    descricao="A P700 é a bomba de concreto mais vendida do Brasil! Com 35m³ por hora, 200 bar de pressão e alcance de até 80 metros horizontal, é perfeita para obras médias e grandes: edifícios, galpões, fundações e pré-moldados. Sistema tubo S, painel PP e automação total."
+                    descricao="A P700 é a bomba estacionária mais vendida do Brasil! Com 35m³/h, 200 bar de pressão e alcance de até 80 metros horizontal, é ideal para obras médias e grandes como edifícios, galpões, fundações e pré-moldados."
                     preco="R$ 165.000"
                     especificacoes={especificacoes}
                     galleryWidthProp={103}
@@ -134,9 +130,9 @@ export default function BombaHidraulicaP700() {
                             { q: "Qual o preço da P700?", a: "R$ 165.000 à vista ou parcelado." },
                             { q: "Qual a capacidade da P700?", a: "35 metros cúbicos por hora com pressão de 200 bar." },
                             { q: "Qual o alcance máximo?", a: "80 metros horizontal e 12 metros vertical." },
-                            { q: "Funciona com brita 0 e 1?", a: "Sim, bombeia concreto usinado com brita 0 e 1 sem entupir." },
+                            { q: "Funciona com brita 0 e 1?", a: "Sim, bombeia concreto com brita 0 e 1 sem problemas." },
                             { q: "É automatizada?", a: "Sim! Sistema 100% automatizado com painel PP." },
-                            { q: "Precisa de motor externo?", a: "Não, já vem com motor diesel embutido (equivalente P500)." },
+                            { q: "Precisa de motor externo?", a: "Não, já vem com motor diesel embutido." },
                         ].map((faq, i) => (
                             <div key={i} itemScope itemProp="mainEntity" itemType="https://schema.org/Question" className="mb-6">
                                 <h3 itemProp="name" className="text-xl font-semibold">{faq.q}</h3>
@@ -160,8 +156,8 @@ export default function BombaHidraulicaP700() {
                         <CardEquipamentos
                             href="/bomba-de-concreto/multimix"
                             src="/img/betoneira.png"
-                            title="Caminhão MultiMix"
-                            price="R$ 185.000"
+                            title="Multimix"
+                            price="Sob consulta"
                         />
                         <div className="flex md:hidden lg:flex">
                             <CardEquipamentos

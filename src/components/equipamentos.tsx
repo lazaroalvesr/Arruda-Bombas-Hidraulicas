@@ -1,6 +1,5 @@
 "use client"
 
-import Link from "next/link"
 import { CardEquipamentos } from "./cardEquipamentos"
 import { motion } from "framer-motion"
 import { EquipamentoProps } from "@/lib/interface";
@@ -72,9 +71,6 @@ export const EquipamentosPage = () => {
                             </motion.div>
                         ))}                         
                     </div>
-                    <Link href="/bomba-de-concreto" rel="noopener noreferrer">
-                        <button className="bg-blue-600 text-[#f7f7f7f7] hover:bg-blue-700 mt-[53px] hover:scale-105 cursor-pointer transition-transform duration-300  rounded-[10px] w-[282px] h-[48px] text-[18px]">Ver mais</button>
-                    </Link>
                 </div>
             </div>
         </section>
