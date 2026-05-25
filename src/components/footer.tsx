@@ -34,7 +34,7 @@ export const FooterPage = () => {
     }, []);
 
     return (
-        <footer className="w-full bg-white border-t">
+        <footer className="w-full bg-[#131a22] border-t">
             <div className="max-w-7xl px-4 py-12 mx-auto">
                 <div className="grid grid-cols-1 gap-8 md:grid-cols-3 lg:grid-cols-4">
                     <Link href="/">

@@ -93,7 +93,7 @@ export const ContatoPage = () => {
     }
 
     return (
-        <section className="bg-[#f8fafc]">
+        <section className="bg-[#131a22]">
             <div className="lg:max-w-[1175px] items-center justify-center flex m-auto lg:py-[60px] py-[80px] relative" id="contato">
                 <div className="flex flex-col items-center text-center justify-center">
                     <motion.div variants={itemVariants} className="text-center space-y-4">

@@ -44,7 +44,7 @@ export const EquipamentosPage = () => {
     ]
 
     return (
-        <section className="bg-[#fff7f79e]">
+        <section className="bg-[#131a22]">
             <div className="max-w-[1444px] flex m-auto items-center justify-center lg:my-0 lg:py-[60px] pb-20" id="equipamento">
                 <div className="flex flex-col items-center">
                     <motion.h2

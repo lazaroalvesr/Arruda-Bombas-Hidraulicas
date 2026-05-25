@@ -59,7 +59,7 @@ export const HeaderPage = () => {
   }
 
   return (
-    <header className="fixed w-full bg-[#f7f7f767]/95 backdrop-blur-sm z-50 shadow-sm top-0">
+    <header className="fixed w-full bg-[#131a22] backdrop-blur-sm z-50 shadow-sm top-0">
       <div className="max-w-7xl lg:px-7 m-auto flex lg:justify-between md:justify-between py-5 items-center">
         <Link href="/" className="flex items-center justify-center gap-2 ml-5 lg:ml-0">
           <Image
@@ -69,7 +69,7 @@ export const HeaderPage = () => {
             height={130} 
             className="flex lg:w-[130px] lg:h-auto w-24" 
             />
-          <h1 className="font-bold text-[#1f3b8b] w-44 lg:w-full md:w-72 text-sm sm:text-base">
+          <h1 className="font-bold text-[#906b36] w-44 lg:w-full md:w-72 text-sm sm:text-base">
             ARRUDA BOMBAS HIDRAÚLICAS
           </h1>
         </Link>
@@ -112,7 +112,7 @@ export const HeaderPage = () => {
                 animate="animate"
                 exit="exit"
                 className={`flex lg:h-auto ${ativo
-                  ? "bg-[#f7f7f7] w-full z-40 top-[90px] justify-center items-center h-80 absolute flex-col left-0"
+                  ? "bg-[#f7f7f7] w-full z-40 top-[90px]  justify-center items-center h-80 absolute flex-col left-0"
                   : "lg:flex-row lg:relative lg:bg-transparent"
                   }`}
                 onClick={closeMenu}

@@ -12,7 +12,7 @@ interface LiHeaderProps {
 export const LiHeader = ({ href, nome, isActive }: LiHeaderProps) => {
   return (
     <motion.li
-      className={`lg:ml-8 my-4 lg:my-0 text-center ${isActive ? "text-blue-600 font-semibold" : "text-gray-700"}`}
+      className={`lg:ml-8 my-4 lg:my-0 text-center ${isActive ? "text-[#906b36] font-semibold" : "text-[#906b36]"}`}
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
     >

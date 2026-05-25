@@ -29,7 +29,7 @@ export const IntialPage = () => {
     }
 
     return (
-        <div className="relative bg-[#f8fafc] overflow-hidden lg:pt-8 py-32">
+        <div className="relative bg-[#131a22] overflow-hidden lg:pt-8 py-32">
             <div className="max-w-7xl mx-auto">
                 <div className="relative">
                     <main className="mt-10 mx-auto lg:max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
@@ -40,12 +40,12 @@ export const IntialPage = () => {
                             animate="visible">
                             <div className="sm:text-center lg:text-left w-full" >
                                 <motion.h1 
-                                    className="text-4xl tracking-tight font-bold     text-[#1e3a8a] lg:w-[800px] w-full sm:text-5xl md:text-[64px]"
+                                    className="text-4xl tracking-tight font-bold text-[#906b36] lg:w-[800px] w-full sm:text-5xl md:text-[64px]"
                                     variants={itemVariants}>
                                     Bombas de Concreto <br />
-                                    <span className="text-green-600">a partir de R$ 165.000</span>
+                                    <span className="text-[#906b36]">a partir de R$ 165.000</span>
                                 </motion.h1>
-                                <motion.p className="mt-8 lg:text-[18px] text-gray-600" variants={itemVariants}>
+                                <motion.p className="mt-8 lg:text-[18px] text-[#906b36]" variants={itemVariants}>
                                     Na Arruda Bombas, oferecemos <span className="font-bold">bombas de concreto</span> novas e robustas para suas obras.
                                     Com pressão de até 200 bar, nossos equipamentos são ideais para projetos residenciais,
                                     lajes, piscinas, edifícios e galpões. <br /> Fabricamos e entregamos em todo o Brasil.
