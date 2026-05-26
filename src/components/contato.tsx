@@ -122,7 +122,7 @@ export const ContatoPage = () => {
                                             href={whatsappContact()}
                                             target="_blank"
                                             rel="noopener noreferrer">
-                                            (19) 99313-6999
+                                            (19) 98870-1809
                                         </Link>
                                     </div>
                                     <motion.a
